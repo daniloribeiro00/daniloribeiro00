@@ -1,9 +1,9 @@
-<h2>Minha bio</h2>
+<h2>Minha bio 😃</h2>
 <p>
     Olá, meu nome é Danilo Ribeiro! Sou estudando de Sistemas de Informação na UniFOA (Centro Universitário de Volta Redonda) e amante de desenvolvimento front-end. 
 <p>
 <h2>
-    Stacks:
+    Stacks
 </h2>
 <ul>
     <li>HTML</li>
