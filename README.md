@@ -6,7 +6,7 @@
     Hi there, my name's Danilo Ribeiro! I'm a Information Systems student at UniFOA (Volta Redonda Universitary Center) and a front-end development lover!
 <p>
 <h2>
-    Stacks
+    Stacks 🚀
 </h2>
 <ul>
     <li>HTML</li>
