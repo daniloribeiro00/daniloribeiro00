@@ -1,44 +1,47 @@
-# daniloribeiro
+# Minha bio / My bio 😃
 
-My bio built with Vue 3, Vite and Tailwind CSS.
+Olá, meu nome é Danilo Ribeiro! Sou desenvolvedor front-end, amante de UI/UX e design, formado de Sistemas de Informação na UniFOA (Centro Universitário de Volta Redonda). Atualmente, trabalho como desenvolvedor front-end júnior no SpeedLab, o laboratório de inovações da [Tecnospeed](https://tecnospeed.com.br).
 
+Hi there, my name is Danilo Ribeiro! I'm a front-end developer, UI/UX and design lover, graduated in Information Systems. Currently I'm working as a junior front-end developer at [Tecnospeed](https://tecnospeed.com.br) innovation lab.
 
-## Project Setup
+## Skills 🚀
 
-```sh
-npm install
+- Linguagens / Languages
+  - JavaScript
+  - TypeScript
 
-yarn
+<br />
 
-pnpm install
-```
+- Frameworks / Libs
+  - Vue.js
+  - React
+  - Next.js
 
-### Compile and Hot-Reload for Development
+<br />
 
-```sh
-npm run dev
+- Agile
+  - Kanban
+  - Scrum
 
-yarn dev
+<br />
 
-pnpm dev
-```
+- Outros / Others
+  - Tailwind CSS
+  - Git
+  - GitHub
+  - GitLab / GitLab CI
 
-### Type-Check, Compile and Minify for Production
+<br />
 
-```sh
-npm run build
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=daniloribeiro00&layout=compact&theme=tokyonight)
 
-yarn build
+## Interesses / Interests
 
-pnpm build
-```
+- Flutter
+- Nuxt.js
+- AWS
+- React Native
 
-### Lint with [ESLint](https://eslint.org/)
+## LinkedIn
 
-```sh
-npm run lint
-
-yarn lint
-
-pnpm lint
-```
+[linkedin.com/in/daniloribeiro00](https://www.linkedin.com/in/daniloribeiro00/)
