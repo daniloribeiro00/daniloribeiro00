@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@headlessui/vue': ^1.6.0
   '@rushstack/eslint-patch': ^1.1.0
   '@types/node': ^16.11.27
   '@vitejs/plugin-vue': ^2.3.1
@@ -13,6 +14,7 @@ specifiers:
   pinia: ^2.0.13
   postcss: ^8.4.13
   prettier: ^2.5.1
+  prettier-plugin-tailwindcss: ^0.1.10
   tailwindcss: ^3.0.24
   typescript: ~4.6.3
   vite: ^2.9.5
@@ -21,7 +23,9 @@ specifiers:
   vue-tsc: ^0.34.7
 
 dependencies:
+  '@headlessui/vue': 1.6.0_vue@3.2.33
   pinia: 2.0.13_ytvqwwdyss532bvoq2clv4ed5m
+  prettier-plugin-tailwindcss: 0.1.10_prettier@2.6.2
   vue: 3.2.33
   vue-router: 4.0.14_vue@3.2.33
 
@@ -65,6 +69,15 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@headlessui/vue/1.6.0_vue@3.2.33:
+    resolution: {integrity: sha512-oB3R1G8BDDcTwaLqkr9G2swJlu62IaC6900fzsFglLVKG25jKOwOrlWKwjFNOMzmSQe/vCvoWJENWfeH10D4AA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.33
+    dev: false
 
   /@humanwhocodes/config-array/0.9.5:
     resolution: {integrity: sha512-ObyMyWxZiCu/yTisA7uzx81s40xR2fD5Cg/2Kq7G02ajkNubJf6BopgDTmDyc3U7sXpNKM8cYOw7s7Tyr+DnCw==}
@@ -1489,6 +1502,15 @@ packages:
     dependencies:
       fast-diff: 1.2.0
     dev: true
+
+  /prettier-plugin-tailwindcss/0.1.10_prettier@2.6.2:
+    resolution: {integrity: sha512-ooDGNuXUjgCXfShliVYQ6+0iXqUFXn+zdNInPe0WZN9qINt9srbLGFGY5jeVL4MXtY20/4S8JaBcd8l6N6NfCQ==}
+    engines: {node: '>=12.17.0'}
+    peerDependencies:
+      prettier: '>=2.2.0'
+    dependencies:
+      prettier: 2.6.2
+    dev: false
 
   /prettier/2.6.2:
     resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
