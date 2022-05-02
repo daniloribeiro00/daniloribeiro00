@@ -29,7 +29,7 @@ if (!navigator.language.toLowerCase().startsWith('pt')) {
   <body
     class="flex min-h-screen w-full flex-col items-center bg-white transition-colors duration-500 dark:bg-zinc-800"
   >
-    <HeaderBar />
+    <HeaderBar class="z-20" />
     <router-view v-slot="{ Component }">
       <Transition mode="out-in">
         <component :is="Component" />

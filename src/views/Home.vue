@@ -55,7 +55,7 @@ const globalStore = useGlobalStore();
       <img
         class="h-40 w-40 max-w-[none] rounded-full object-cover xs:h-60 xs:w-60 md:h-80 md:w-80"
         src="https://avatars.githubusercontent.com/u/68981163?"
-        alt="Danilo"
+        alt="Danilo Ribeiro"
       />
     </div>
   </main>
