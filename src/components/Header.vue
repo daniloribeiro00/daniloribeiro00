@@ -54,7 +54,7 @@ watch(darkMode, () => {
       >
         <router-link
           to="/"
-          class="whitespace-nowrap text-xl font-semibold leading-none text-gray-600 transition-colors hover:text-violet-600 dark:text-white"
+          class="whitespace-nowrap text-xl font-semibold leading-none text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
         >
           Danilo Ribeiro
         </router-link>
@@ -68,7 +68,7 @@ watch(darkMode, () => {
         <router-link
           to="/"
           class="border-y-2 border-transparent py-1 text-xs font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white"
-          activeClass="border-b-violet-600 text-violet-600 dark:text-violet-600 hover:border-b-violet-600"
+          activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500 hover:border-b-violet-600"
         >
           HOME
         </router-link>
@@ -80,7 +80,7 @@ watch(darkMode, () => {
         <router-link
           to="/about"
           class="border-y-2 border-transparent py-1 text-xs font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white"
-          activeClass="border-b-violet-600 text-violet-600 dark:text-violet-600  hover:border-b-violet-600"
+          activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
         >
           {{ globalStore.language === 'pt-BR' ? 'SOBRE' : 'ABOUT' }}
         </router-link>
@@ -92,7 +92,7 @@ watch(darkMode, () => {
         <router-link
           to="/skills"
           class="border-y-2 border-transparent py-1 text-xs font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white"
-          activeClass="border-b-violet-600 text-violet-600 dark:text-violet-600  hover:border-b-violet-600"
+          activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
         >
           SKILLS
         </router-link>
@@ -104,7 +104,7 @@ watch(darkMode, () => {
         <router-link
           to="/works"
           class="border-y-2 border-transparent py-1 text-xs font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white"
-          activeClass="border-b-violet-600 text-violet-600 dark:text-violet-600  hover:border-b-violet-600"
+          activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
         >
           {{ globalStore.language === 'pt-BR' ? 'PROJETOS' : 'WORKS' }}
         </router-link>
@@ -116,7 +116,7 @@ watch(darkMode, () => {
         <router-link
           to="/contact"
           class="border-y-2 border-transparent py-1 text-xs font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white"
-          activeClass="border-b-violet-600 text-violet-600 dark:text-violet-600  hover:border-b-violet-600"
+          activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
         >
           {{ globalStore.language === 'pt-BR' ? 'CONTATO' : 'CONTACT' }}
         </router-link>
@@ -125,7 +125,7 @@ watch(darkMode, () => {
     <div class="flex h-full w-1/3 items-center justify-end gap-4">
       <button
         type="button"
-        class="flex items-center justify-center gap-1.5 rounded-full text-gray-600 outline-none ring-violet-600 ring-offset-2 transition-colors duration-200 ease-in-out hover:text-violet-600 focus:ring dark:text-white"
+        class="flex items-center justify-center gap-1.5 rounded-full text-gray-600 outline-none ring-violet-600 ring-offset-2 transition-colors duration-200 ease-in-out hover:text-violet-600 focus:ring dark:text-white dark:hover:text-violet-500"
         @click="setLanguage"
       >
         <span class="pl-1 text-xs">
@@ -148,7 +148,7 @@ watch(darkMode, () => {
       </button>
       <Switch
         v-model="darkMode"
-        :class="darkMode ? 'bg-violet-600' : 'bg-gray-300'"
+        :class="darkMode ? 'bg-violet-500' : 'bg-gray-300'"
         class="relative inline-flex h-7 w-14 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
       >
         <span class="sr-only">Dark mode</span>

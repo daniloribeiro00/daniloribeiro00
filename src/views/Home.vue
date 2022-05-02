@@ -15,7 +15,8 @@ const globalStore = useGlobalStore();
       </h1>
       <h1 class="text-7xl font-bold text-gray-600 dark:text-white">
         {{ globalStore.language === 'pt-BR' ? 'Eu sou' : "I'm" }}
-        <span class="text-violet-600">Danilo Ribeiro</span>.
+        <span class="text-violet-600 dark:text-violet-500">Danilo Ribeiro</span
+        >.
       </h1>
       <h2
         class="mt-6 text-3xl font-bold tracking-wider text-gray-600 dark:text-white"
