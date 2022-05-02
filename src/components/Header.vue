@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
+import { useGlobalStore } from '../stores/globalStore';
 import { Switch } from '@headlessui/vue';
-import Button from '../components/Button.vue';
+
+const globalStore = useGlobalStore();
 
 const darkMode = ref(false);
 
 if (
   localStorage.theme === 'dark' ||
-  (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  (!('theme' in localStorage) &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches)
 ) {
   darkMode.value = true;
 } else {
@@ -18,12 +21,21 @@ const toggleTheme = () => {
   if (localStorage.theme === 'dark') {
     document.documentElement.classList.remove('dark');
     localStorage.theme = 'light';
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#f1f5f9');
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute('content', '#f1f5f9');
   } else {
     document.documentElement.classList.add('dark');
     localStorage.theme = 'dark';
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#27272a');
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute('content', '#27272a');
   }
+};
+
+const setLanguage = () => {
+  if (globalStore.language === 'pt-BR') globalStore.setLanguage('en');
+  else globalStore.setLanguage('pt-BR');
 };
 
 watch(darkMode, () => {
@@ -33,23 +45,118 @@ watch(darkMode, () => {
 
 <template>
   <header
-    class="flex h-20 w-full items-center justify-between bg-slate-100 p-4 transition-colors duration-500 dark:bg-zinc-800"
+    class="flex w-full items-center justify-between bg-white p-6 transition-colors duration-500 dark:bg-zinc-800"
   >
-    <div class="flex h-full items-center gap-4">
-      <img
+    <div class="flex h-full w-1/3 items-center gap-4">
+      <!-- <img
         class="h-full rounded-full"
         src="https://avatars.githubusercontent.com/u/68981163?"
         alt="Danilo"
-      />
-      <h1 class="text-lg text-gray-600 dark:text-white">Danilo Ribeiro</h1>
+      /> -->
+      <button
+        type="button"
+        class="rounded-lg outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
+      >
+        <router-link
+          to="/"
+          class="whitespace-nowrap text-xl font-semibold leading-none text-gray-800 transition-opacity hover:opacity-70 dark:text-white"
+        >
+          Danilo Ribeiro
+        </router-link>
+      </button>
     </div>
-    <div class="flex h-full items-center gap-4">
+    <nav class="flex h-full w-1/3 items-center justify-center gap-4">
+      <button
+        type="button"
+        class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
+      >
+        <router-link
+          to="/"
+          class="border-y-2 border-transparent text-sm text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
+          activeClass="border-b-violet-600 text-gray-800 dark:text-white hover:border-b-violet-600"
+        >
+          HOME
+        </router-link>
+      </button>
+      <button
+        type="button"
+        class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
+      >
+        <router-link
+          to="/about"
+          class="border-y-2 border-transparent text-sm text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
+          activeClass="border-b-violet-600 text-gray-800 dark:text-white hover:border-b-violet-600"
+        >
+          {{ globalStore.language === 'pt-BR' ? 'SOBRE' : 'ABOUT' }}
+        </router-link>
+      </button>
+      <button
+        type="button"
+        class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
+      >
+        <router-link
+          to="/skills"
+          class="border-y-2 border-transparent text-sm text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
+          activeClass="border-b-violet-600 text-gray-800 dark:text-white hover:border-b-violet-600"
+        >
+          SKILLS
+        </router-link>
+      </button>
+      <button
+        type="button"
+        class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
+      >
+        <router-link
+          to="/works"
+          class="border-y-2 border-transparent text-sm text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
+          activeClass="border-b-violet-600 text-gray-800 dark:text-white hover:border-b-violet-600"
+        >
+          {{ globalStore.language === 'pt-BR' ? 'PROJETOS' : 'WORKS' }}
+        </router-link>
+      </button>
+      <button
+        type="button"
+        class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
+      >
+        <router-link
+          to="/contact"
+          class="border-y-2 border-transparent text-sm text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
+          activeClass="border-b-violet-600 text-gray-800 dark:text-white hover:border-b-violet-600"
+        >
+          {{ globalStore.language === 'pt-BR' ? 'CONTATO' : 'CONTACT' }}
+        </router-link>
+      </button>
+    </nav>
+    <div class="flex h-full w-1/3 items-center justify-end gap-4">
+      <button
+        type="button"
+        class="flex items-center justify-center gap-1.5 rounded-full text-gray-600 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out hover:opacity-70 focus:ring dark:text-white"
+        @click="setLanguage"
+      >
+        <span class="pl-1 text-xs">
+          {{ globalStore.language === 'pt-BR' ? 'Português' : 'English' }}
+        </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </button>
       <Switch
         v-model="darkMode"
-        :class="darkMode ? 'bg-slate-600' : 'bg-gray-300'"
-        class="relative inline-flex h-7 w-14 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+        :class="darkMode ? 'bg-violet-600' : 'bg-gray-300'"
+        class="relative inline-flex h-7 w-14 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
       >
-        <span class="sr-only">Use setting</span>
+        <span class="sr-only">Dark mode</span>
         <span
           aria-hidden="true"
           :class="darkMode ? 'translate-x-7' : 'translate-x-0'"
@@ -81,11 +188,12 @@ watch(darkMode, () => {
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+            <path
+              d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+            />
           </svg>
         </span>
       </Switch>
-      <Button><a href="mailto:danilo@duarteribeiro.com.br">Entrar em Contato</a></Button>
     </div>
   </header>
 </template>
