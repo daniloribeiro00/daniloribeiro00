@@ -53,6 +53,40 @@ const myAge = () => {
     </div>
     <div class="flex w-full flex-col gap-2">
       <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
+        {{
+          globalStore.language === 'pt-BR'
+            ? 'EXPERIÊNCIA PROFISSIONAL'
+            : 'PROFESSIONAL EXPERIENCE'
+        }}
+      </h2>
+      <p
+        class="whitespace-pre-line text-justify text-lg leading-relaxed text-gray-600 dark:text-white sm:leading-loose"
+      >
+        {{
+          globalStore.language === 'pt-BR'
+            ? 'Desenvolvedor Front-End Júnior na'
+            : 'Junior Front-End Developer at'
+        }}
+        <a
+          href="https://www.linkedin.com/company/tecnospeed-ti/"
+          target="_blank"
+          class="font-semibold"
+        >
+          TecnoSpeed</a
+        >.
+      </p>
+      <span
+        class="ml-8 whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:leading-loose"
+      >
+        {{
+          globalStore.language === 'pt-BR'
+            ? 'Responsável pela criação, manutenção e aprimoramento de aplicações front-web no SpeedLab, o laboratório de inovação da TecnoSpeed, utilizando Vue.js 3 e Tailwind CSS, seguindo o conceito de MVP (Minimum Viable Product) até a estruturação e lançamento do produto.\nAlém disso, responsável também por manter bibliotecas internas no NPM local da empresa bem como um dos principais contribuintes na criação do design system da TecnoSpeed.'
+            : "Responsible for creating, maintaining and improving front-web application in the TecnoSpeed's innovation lab using Vue.js 3 and Tailwind CSS following the MVP (Minimum Viable Product) until the later structuring and release of the product.\nIn addition, also responsible for maintaining internal libraries in the local NPM and one of the main creators of the TecnoSpeed's design system."
+        }}
+      </span>
+    </div>
+    <div class="flex w-full flex-col gap-2">
+      <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
         BIO
       </h2>
       <p

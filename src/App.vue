@@ -41,11 +41,19 @@ if (!navigator.language.toLowerCase().startsWith('pt')) {
 <style>
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
+}
+
+.v-leave-to {
+  transform: translateY(-4rem);
+}
+
+.v-enter-from {
+  transform: translateY(-4rem);
 }
 </style>

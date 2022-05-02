@@ -26,6 +26,7 @@ Hi there, my name is Danilo Ribeiro! I'm a front-end developer, UI/UX and design
 <br />
 
 - Outros / Others
+  - UI/UX
   - Tailwind CSS
   - Git
   - GitHub
@@ -40,7 +41,6 @@ Hi there, my name is Danilo Ribeiro! I'm a front-end developer, UI/UX and design
 - Flutter
 - Nuxt.js
 - AWS
-- React Native
 
 ## LinkedIn
 
