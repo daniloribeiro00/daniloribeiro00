@@ -48,11 +48,6 @@ watch(darkMode, () => {
     class="flex w-full items-center justify-between bg-white p-6 transition-colors duration-500 dark:bg-zinc-800"
   >
     <div class="flex h-full w-1/3 items-center gap-4">
-      <!-- <img
-        class="h-full rounded-full"
-        src="https://avatars.githubusercontent.com/u/68981163?"
-        alt="Danilo"
-      /> -->
       <button
         type="button"
         class="rounded-lg outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
@@ -72,7 +67,7 @@ watch(darkMode, () => {
       >
         <router-link
           to="/"
-          class="border-y-2 border-transparent text-sm text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
+          class="border-y-2 border-transparent py-1 text-sm tracking-wider text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
           activeClass="border-b-violet-600 text-gray-800 dark:text-white hover:border-b-violet-600"
         >
           HOME
@@ -84,7 +79,7 @@ watch(darkMode, () => {
       >
         <router-link
           to="/about"
-          class="border-y-2 border-transparent text-sm text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
+          class="border-y-2 border-transparent py-1 text-sm tracking-wider text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
           activeClass="border-b-violet-600 text-gray-800 dark:text-white hover:border-b-violet-600"
         >
           {{ globalStore.language === 'pt-BR' ? 'SOBRE' : 'ABOUT' }}
@@ -96,7 +91,7 @@ watch(darkMode, () => {
       >
         <router-link
           to="/skills"
-          class="border-y-2 border-transparent text-sm text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
+          class="border-y-2 border-transparent py-1 text-sm tracking-wider text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
           activeClass="border-b-violet-600 text-gray-800 dark:text-white hover:border-b-violet-600"
         >
           SKILLS
@@ -108,7 +103,7 @@ watch(darkMode, () => {
       >
         <router-link
           to="/works"
-          class="border-y-2 border-transparent text-sm text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
+          class="border-y-2 border-transparent py-1 text-sm tracking-wider text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
           activeClass="border-b-violet-600 text-gray-800 dark:text-white hover:border-b-violet-600"
         >
           {{ globalStore.language === 'pt-BR' ? 'PROJETOS' : 'WORKS' }}
@@ -120,7 +115,7 @@ watch(darkMode, () => {
       >
         <router-link
           to="/contact"
-          class="border-y-2 border-transparent text-sm text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
+          class="border-y-2 border-transparent py-1 text-sm tracking-wider text-gray-600 transition-colors hover:border-b-violet-400 dark:text-white"
           activeClass="border-b-violet-600 text-gray-800 dark:text-white hover:border-b-violet-600"
         >
           {{ globalStore.language === 'pt-BR' ? 'CONTATO' : 'CONTACT' }}
