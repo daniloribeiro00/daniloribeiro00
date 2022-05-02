@@ -7,19 +7,23 @@ const globalStore = useGlobalStore();
 
 <template>
   <main
-    class="mb-10 flex h-full w-full flex-1 items-center justify-between gap-16 px-32"
+    class="mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col-reverse items-center justify-center gap-8 px-6 sm:flex-row md:justify-between md:px-12"
   >
     <div>
-      <h1 class="text-7xl font-bold text-gray-600 dark:text-white">
+      <h1
+        class="text-3xl font-bold text-gray-600 dark:text-white sm:text-5xl md:text-7xl"
+      >
         {{ globalStore.language === 'pt-BR' ? 'Olá!' : 'Hi,' }}
       </h1>
-      <h1 class="text-7xl font-bold text-gray-600 dark:text-white">
+      <h1
+        class="text-3xl font-bold text-gray-600 dark:text-white sm:text-5xl md:text-7xl"
+      >
         {{ globalStore.language === 'pt-BR' ? 'Eu sou' : "I'm" }}
         <span class="text-violet-600 dark:text-violet-500">Danilo Ribeiro</span
         >.
       </h1>
       <h2
-        class="mt-6 text-3xl font-bold tracking-wider text-gray-600 dark:text-white"
+        class="text-md mt-6 font-bold tracking-wider text-gray-600 dark:text-white sm:text-xl md:text-3xl"
       >
         {{
           globalStore.language === 'pt-BR'
@@ -27,7 +31,7 @@ const globalStore = useGlobalStore();
             : 'FRONT-END DEVELOPER'
         }}
       </h2>
-      <Button class="mt-8">
+      <Button class="mt-8 w-full sm:w-auto">
         <router-link
           to="/contact"
           class="flex items-center justify-center gap-2"
@@ -49,7 +53,7 @@ const globalStore = useGlobalStore();
     </div>
     <div>
       <img
-        class="h-80 w-80 rounded-full"
+        class="h-40 w-40 max-w-[none] rounded-full object-cover xs:h-60 xs:w-60 md:h-80 md:w-80"
         src="https://avatars.githubusercontent.com/u/68981163?"
         alt="Danilo"
       />

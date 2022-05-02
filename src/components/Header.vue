@@ -152,17 +152,19 @@ watch(darkMode, () => {
         <Switch
           v-model="darkMode"
           :class="darkMode ? 'bg-violet-500' : 'bg-gray-300'"
-          class="relative inline-flex h-7 w-14 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
+          class="relative inline-flex h-6 w-12 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring sm:h-7 sm:w-14"
         >
           <span class="sr-only">Dark mode</span>
           <span
             aria-hidden="true"
-            :class="darkMode ? 'translate-x-7' : 'translate-x-0'"
-            class="pointer-events-none flex h-6 w-6 transform items-center justify-center rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out"
+            :class="
+              darkMode ? 'translate-x-6 sm:translate-x-7' : 'translate-x-0'
+            "
+            class="pointer-events-none flex h-5 w-5 transform items-center justify-center rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out sm:h-6 sm:w-6"
           >
             <svg
               v-if="!darkMode"
-              class="h-5 w-5 text-gray-600"
+              class="h-4 w-4 text-gray-600 sm:h-5 sm:w-5"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +183,7 @@ watch(darkMode, () => {
             </svg>
             <svg
               v-else
-              class="h-5 w-5 text-gray-800"
+              class="h-4 w-4 text-gray-800 sm:h-5 sm:w-5"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +197,7 @@ watch(darkMode, () => {
       </div>
     </div>
     <nav
-      class="mt-2 flex h-full w-full items-center justify-center gap-3 md:hidden"
+      class="mt-3 flex h-full w-full items-center justify-center gap-3 md:hidden"
     >
       <button
         type="button"

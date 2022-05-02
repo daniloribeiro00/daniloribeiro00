@@ -30,16 +30,18 @@ if (!navigator.language.toLowerCase().startsWith('pt')) {
     class="flex min-h-screen w-full flex-col items-center bg-white transition-colors duration-500 dark:bg-zinc-800"
   >
     <HeaderBar />
-    <Transition>
-      <router-view />
-    </Transition>
+    <router-view v-slot="{ Component }">
+      <Transition mode="out-in">
+        <component :is="Component" />
+      </Transition>
+    </router-view>
   </body>
 </template>
 
 <style>
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease;
 }
 
 .v-enter-from,
