@@ -6,13 +6,15 @@ const globalStore = useGlobalStore();
 
 <template>
   <main
-    class="mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col items-center justify-center gap-y-12 px-8 sm:grid sm:auto-rows-max sm:grid-cols-2 sm:gap-12 sm:py-12 md:px-12"
+    class="mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col items-center justify-center gap-y-12 px-8 sm:gap-12 sm:py-12 md:px-12"
   >
     <div class="flex h-full w-full flex-col gap-4">
       <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
         {{ globalStore.language === 'pt-BR' ? 'LINGUAGENS' : 'LANGUAGES' }}
       </h2>
-      <ul class="flex flex-col gap-4">
+      <ul
+        class="grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+      >
         <li>
           <a
             href="https://developer.mozilla.org/docs/Web/JavaScript"
@@ -22,8 +24,7 @@ const globalStore = useGlobalStore();
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 630 630"
-              width="30"
-              height="30"
+              class="h-7 w-7 min-w-[1.75rem]"
             >
               <rect width="630" height="630" fill="#f7df1e" />
               <path
@@ -44,8 +45,7 @@ const globalStore = useGlobalStore();
               xmlns:cc="http://creativecommons.org/ns#"
               xmlns:dc="http://purl.org/dc/elements/1.1/"
               xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-              width="30"
-              height="30"
+              class="h-7 w-7 min-w-[1.75rem]"
               fill="none"
               version="1.1"
               viewBox="0 0 512 512"
@@ -69,7 +69,9 @@ const globalStore = useGlobalStore();
       <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
         FRAMEWORKS / LIBRARIES
       </h2>
-      <ul class="flex flex-col gap-4">
+      <ul
+        class="grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+      >
         <li>
           <a
             href="https://vuejs.org"
@@ -77,10 +79,8 @@ const globalStore = useGlobalStore();
             class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
           >
             <svg
-              class="logo"
+              class="h-7 w-7 min-w-[1.75rem]"
               viewBox="0 0 128 128"
-              width="30"
-              height="30"
               data-v-1c32dc7e=""
             >
               <path
@@ -105,8 +105,7 @@ const globalStore = useGlobalStore();
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
+              class="h-7 w-7 min-w-[1.75rem]"
               viewBox="-11.5 -10.23174 23 20.46348"
             >
               <circle cx="0" cy="0" r="2.05" fill="#61dafb" />
@@ -128,12 +127,10 @@ const globalStore = useGlobalStore();
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="30"
-              height="30"
+              class="mt-0.5 h-7 w-7 min-w-[1.75rem] text-black dark:text-white"
               viewBox="0 0 207 124"
               version="1.1"
               fill="currentColor"
-              class="mt-0.5 text-black dark:text-white"
             >
               <g
                 id="Page-1"
@@ -179,7 +176,9 @@ const globalStore = useGlobalStore();
       <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
         AGILE
       </h2>
-      <ul class="flex flex-col gap-4">
+      <ul
+        class="grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+      >
         <li>
           <a
             :href="
@@ -191,7 +190,7 @@ const globalStore = useGlobalStore();
             class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
           >
             <svg
-              class="h-7 w-7"
+              class="h-7 w-7 min-w-[1.75rem]"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -214,7 +213,7 @@ const globalStore = useGlobalStore();
             class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
           >
             <svg
-              class="mb-0.5 h-7 w-7"
+              class="mb-0.5 h-7 w-7 min-w-[1.75rem]"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -232,12 +231,14 @@ const globalStore = useGlobalStore();
       <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
         {{ globalStore.language === 'pt-BR' ? 'OUTROS' : 'OTHERS' }}
       </h2>
-      <ul class="flex flex-col gap-4">
+      <ul
+        class="grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+      >
         <li
           class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
         >
           <svg
-            class="h-7 w-7"
+            class="h-7 w-7 min-w-[1.75rem]"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -252,27 +253,6 @@ const globalStore = useGlobalStore();
         </li>
         <li>
           <a
-            href="https://tailwindcss.com"
-            target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-7 w-7"
-              viewBox="0 0 63 63"
-              fill="#38bdf8"
-            >
-              <path
-                d="M16 25.6c2.133-8.533 7.467-12.8 16-12.8 12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8C61.867 27.733 56.533 32 48 32c-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8zM0 44.8C2.133 36.267 7.467 32 16 32c12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8-2.133 8.533-7.467 12.8-16 12.8-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8z"
-                fill="url(#A)"
-                fill-rule="evenodd"
-              />
-            </svg>
-            Tailwind CSS
-          </a>
-        </li>
-        <li>
-          <a
             href="https://git-scm.com"
             target="_blank"
             class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
@@ -282,9 +262,7 @@ const globalStore = useGlobalStore();
               xmlns:xlink="http://www.w3.org/1999/xlink"
               version="1.1"
               id="Layer_1"
-              x="0px"
-              y="0px"
-              class="h-7 w-7"
+              class="h-7 w-7 min-w-[1.75rem]"
               viewBox="0 0 97 97"
               enable-background="new 0 0 97 97"
               xml:space="preserve"
@@ -307,7 +285,7 @@ const globalStore = useGlobalStore();
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-7 w-7 text-[#1B1F23] dark:text-white"
+              class="h-7 w-7 min-w-[1.75rem] text-[#1B1F23] dark:text-white"
               viewBox="0 0 1024 1024"
               fill="none"
             >
@@ -330,7 +308,7 @@ const globalStore = useGlobalStore();
           >
             <svg
               data-v-5a86f8c0=""
-              class="h-7 w-7"
+              class="h-7 w-7 min-w-[1.75rem]"
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -353,7 +331,28 @@ const globalStore = useGlobalStore();
                 fill="#FC6D26"
               />
             </svg>
-            GitLab / GitLab CI
+            GitLab
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-7 w-7 min-w-[1.75rem]"
+              viewBox="0 0 63 63"
+              fill="#38bdf8"
+            >
+              <path
+                d="M16 25.6c2.133-8.533 7.467-12.8 16-12.8 12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8C61.867 27.733 56.533 32 48 32c-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8zM0 44.8C2.133 36.267 7.467 32 16 32c12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8-2.133 8.533-7.467 12.8-16 12.8-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8z"
+                fill="url(#A)"
+                fill-rule="evenodd"
+              />
+            </svg>
+            Tailwind CSS
           </a>
         </li>
       </ul>
@@ -362,7 +361,9 @@ const globalStore = useGlobalStore();
       <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
         {{ globalStore.language === 'pt-BR' ? 'INTERESSES' : 'INTERESTS' }}
       </h2>
-      <ul class="flex flex-col gap-4 sm:flex-row sm:gap-16">
+      <ul
+        class="grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+      >
         <li>
           <a
             href="https://flutter.dev"
@@ -372,7 +373,7 @@ const globalStore = useGlobalStore();
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
-              class="h-7 w-7"
+              class="h-7 w-7 min-w-[1.75rem]"
               viewBox="0 0 65 65"
             >
               <g transform="matrix(.061615 0 0 .061615 -1.430818 -1.2754)">
@@ -477,7 +478,7 @@ const globalStore = useGlobalStore();
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="mb-0.5 h-7 w-7"
+              class="mb-0.5 h-7 w-7 min-w-[1.75rem]"
               viewBox="0 0 120 120"
               fill="none"
             >
@@ -505,7 +506,7 @@ const globalStore = useGlobalStore();
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
               version="1.1"
-              class="mt-0.5 w-7"
+              class="mt-0.5 w-7 min-w-[1.75rem]"
               viewBox="0 0 304 182"
               xml:space="preserve"
             >

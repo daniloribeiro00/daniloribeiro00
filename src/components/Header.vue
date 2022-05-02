@@ -48,7 +48,7 @@ watch(darkMode, () => {
     <div
       class="flex w-full items-center justify-between bg-white transition-colors duration-500 dark:bg-zinc-800"
     >
-      <div class="flex h-full w-1/3 items-center gap-4">
+      <div class="flex h-full w-40 items-center gap-4">
         <button
           type="button"
           class="rounded-lg outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
@@ -125,7 +125,7 @@ watch(darkMode, () => {
           </router-link>
         </button>
       </nav>
-      <div class="flex h-full w-1/3 items-center justify-end gap-4">
+      <div class="flex h-full w-40 items-center justify-end gap-4">
         <button
           type="button"
           class="flex items-center justify-center gap-1.5 rounded-full text-gray-600 outline-none ring-violet-600 ring-offset-2 transition-colors duration-200 ease-in-out hover:text-violet-600 focus:ring dark:text-white dark:hover:text-violet-500"
