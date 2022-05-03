@@ -22,6 +22,25 @@ if (
 
 if (!navigator.language.toLowerCase().startsWith('pt')) {
   globalStore.setLanguage('en');
+  document
+    .querySelector('meta[name="description"]')
+    ?.setAttribute(
+      'content',
+      'Front-End Developer - Vue.js + React + Next.js + TypeScript + UI/UX'
+    );
+} else {
+  document
+    .querySelector('meta[name="description"]')
+    ?.setAttribute(
+      'content',
+      'Desenvolvedor Front-End - Vue.js + React + Next.js + TypeScript + UI/UX'
+    );
+  document
+    .querySelector('meta[property="og:description"]')
+    ?.setAttribute(
+      'content',
+      'Desenvolvedor Front-End - Vue.js + React + Next.js + TypeScript + UI/UX'
+    );
 }
 </script>
 
