@@ -34,13 +34,14 @@ Hi there, my name is Danilo Ribeiro! I'm a front-end developer, UI/UX and design
 
 <br />
 
+- Interesses / Interests
+  - Flutter
+  - Nuxt.js
+  - AWS
+
+<br />
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=daniloribeiro00&layout=compact&theme=tokyonight)
-
-## Interesses / Interests
-
-- Flutter
-- Nuxt.js
-- AWS
 
 ## LinkedIn
 
