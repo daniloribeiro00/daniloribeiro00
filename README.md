@@ -43,6 +43,6 @@ Hi there, my name is Danilo Ribeiro! I'm a front-end developer, UI/UX and design
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=daniloribeiro00&layout=compact&theme=tokyonight)
 
-## LinkedIn
+[danilo.duarteribeiro.com.br](https://danilo.duarteribeiro.com.br/)
 
 [linkedin.com/in/daniloribeiro00](https://www.linkedin.com/in/daniloribeiro00/)
