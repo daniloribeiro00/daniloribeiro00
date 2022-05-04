@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useGlobalStore } from './stores/globalStore';
-import HeaderBar from './components/Header.vue';
+import Header from './components/Header.vue';
 
 const globalStore = useGlobalStore();
 
@@ -48,7 +48,7 @@ if (!navigator.language.toLowerCase().startsWith('pt')) {
   <body
     class="flex min-h-screen w-full flex-col items-center bg-white transition-colors duration-500 dark:bg-zinc-800"
   >
-    <HeaderBar class="z-20" />
+    <Header class="z-20" />
     <router-view v-slot="{ Component }">
       <Transition mode="out-in">
         <component :is="Component" />
@@ -58,6 +58,27 @@ if (!navigator.language.toLowerCase().startsWith('pt')) {
 </template>
 
 <style>
+@supports (overflow-y: overlay) {
+  .custom-scrollbar {
+    overflow-y: overlay;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  background-color: #868686;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 .v-enter-active,
 .v-leave-active {
   transition: all 0.3s ease;
