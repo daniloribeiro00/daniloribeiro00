@@ -10,7 +10,9 @@ const globalStore = useGlobalStore();
     class="mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col items-center justify-center gap-16 px-8 sm:py-12 md:px-12"
   >
     <div class="flex w-full flex-col gap-2">
-      <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
+      <h2
+        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+      >
         PLUG4MARKET
       </h2>
       <div class="flex w-full flex-col gap-8 md:flex-row">
@@ -21,7 +23,7 @@ const globalStore = useGlobalStore();
         </div>
         <div class="flex w-full flex-col gap-4 md:w-1/2">
           <p
-            class="whitespace-pre-line text-justify text-xl leading-relaxed text-gray-600 dark:text-white"
+            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -30,7 +32,7 @@ const globalStore = useGlobalStore();
             }}
           </p>
           <p
-            class="whitespace-pre-line text-justify text-xl leading-relaxed text-gray-600 dark:text-white"
+            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -162,7 +164,9 @@ const globalStore = useGlobalStore();
       </div>
     </div>
     <div class="flex w-full flex-col gap-2">
-      <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
+      <h2
+        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+      >
         PLUG4FOODS
       </h2>
       <div class="flex w-full flex-col gap-8 md:flex-row">
@@ -173,7 +177,7 @@ const globalStore = useGlobalStore();
         </div>
         <div class="flex w-full flex-col gap-4 md:w-1/2">
           <p
-            class="whitespace-pre-line text-justify text-xl leading-relaxed text-gray-600 dark:text-white"
+            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -182,7 +186,7 @@ const globalStore = useGlobalStore();
             }}
           </p>
           <p
-            class="whitespace-pre-line text-justify text-xl leading-relaxed text-gray-600 dark:text-white"
+            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -314,7 +318,9 @@ const globalStore = useGlobalStore();
       </div>
     </div>
     <div class="flex w-full flex-col gap-2">
-      <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
+      <h2
+        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+      >
         {{
           globalStore.language === 'pt-BR'
             ? 'DESIGN SYSTEM TECNOSPEED'
@@ -408,7 +414,7 @@ const globalStore = useGlobalStore();
         </div>
         <div class="flex w-full flex-col gap-4 md:w-1/2">
           <p
-            class="whitespace-pre-line text-justify text-xl leading-relaxed text-gray-600 dark:text-white"
+            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -417,7 +423,7 @@ const globalStore = useGlobalStore();
             }}
           </p>
           <p
-            class="whitespace-pre-line text-justify text-xl leading-relaxed text-gray-600 dark:text-white"
+            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
           >
             {{
               globalStore.language === 'pt-BR'

@@ -18,7 +18,7 @@ const globalStore = useGlobalStore();
             : 'Feel free to contact me :)'
         }}
       </p>
-      <ul class="flex flex-col gap-8 pt-6 sm:gap-6 sm:pt-2">
+      <ul class="-ml-2 flex flex-col gap-8 pt-6 sm:ml-0 sm:gap-6 sm:pt-2">
         <li class="flex items-center justify-center sm:justify-start">
           <a
             href="https://www.linkedin.com/in/daniloribeiro00/"

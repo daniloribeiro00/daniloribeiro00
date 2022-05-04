@@ -9,7 +9,9 @@ const globalStore = useGlobalStore();
     class="mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col items-center justify-center gap-y-12 px-8 sm:gap-12 sm:py-12 md:px-12"
   >
     <div class="flex h-full w-full flex-col gap-4">
-      <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
+      <h2
+        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+      >
         {{ globalStore.language === 'pt-BR' ? 'LINGUAGENS' : 'LANGUAGES' }}
       </h2>
       <ul
@@ -66,7 +68,9 @@ const globalStore = useGlobalStore();
       </ul>
     </div>
     <div class="flex h-full w-full flex-col gap-4">
-      <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
+      <h2
+        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+      >
         FRAMEWORKS / LIBRARIES
       </h2>
       <ul
@@ -173,7 +177,9 @@ const globalStore = useGlobalStore();
       </ul>
     </div>
     <div class="flex h-full w-full flex-col gap-4">
-      <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
+      <h2
+        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+      >
         AGILE
       </h2>
       <ul
@@ -228,7 +234,9 @@ const globalStore = useGlobalStore();
       </ul>
     </div>
     <div class="flex h-full w-full flex-col gap-4">
-      <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
+      <h2
+        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+      >
         {{ globalStore.language === 'pt-BR' ? 'OUTROS' : 'OTHERS' }}
       </h2>
       <ul
@@ -358,7 +366,9 @@ const globalStore = useGlobalStore();
       </ul>
     </div>
     <div class="col-span-2 flex h-full w-full flex-col gap-4">
-      <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
+      <h2
+        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+      >
         {{ globalStore.language === 'pt-BR' ? 'INTERESSES' : 'INTERESTS' }}
       </h2>
       <ul

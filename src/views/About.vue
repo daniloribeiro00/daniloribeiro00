@@ -20,11 +20,13 @@ const myAge = () => {
     class="mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col items-center justify-center gap-8 px-8 sm:py-12 md:px-12"
   >
     <div class="flex w-full flex-col gap-2">
-      <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
+      <h2
+        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+      >
         {{ globalStore.language === 'pt-BR' ? 'RESUMO' : 'TL;DR' }}
       </h2>
       <p
-        class="whitespace-pre-line text-justify text-lg leading-relaxed text-gray-600 dark:text-white sm:leading-loose"
+        class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-lg sm:leading-loose"
       >
         {{
           globalStore.language === 'pt-BR'
@@ -34,7 +36,9 @@ const myAge = () => {
       </p>
     </div>
     <div class="flex w-full flex-col gap-2">
-      <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
+      <h2
+        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+      >
         {{
           globalStore.language === 'pt-BR'
             ? 'FORMAÇÃO ACADÊMICA'
@@ -42,7 +46,7 @@ const myAge = () => {
         }}
       </h2>
       <p
-        class="whitespace-pre-line text-justify text-lg leading-relaxed text-gray-600 dark:text-white sm:leading-loose"
+        class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-lg sm:leading-loose"
       >
         {{
           globalStore.language === 'pt-BR'
@@ -52,7 +56,9 @@ const myAge = () => {
       </p>
     </div>
     <div class="flex w-full flex-col gap-2">
-      <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
+      <h2
+        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+      >
         {{
           globalStore.language === 'pt-BR'
             ? 'EXPERIÊNCIA PROFISSIONAL'
@@ -60,7 +66,7 @@ const myAge = () => {
         }}
       </h2>
       <p
-        class="whitespace-pre-line text-justify text-lg leading-relaxed text-gray-600 dark:text-white sm:leading-loose"
+        class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-lg sm:leading-loose"
       >
         {{
           globalStore.language === 'pt-BR'
@@ -86,11 +92,13 @@ const myAge = () => {
       </span>
     </div>
     <div class="flex w-full flex-col gap-2">
-      <h2 class="text-2xl font-bold text-violet-600 dark:text-violet-500">
+      <h2
+        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+      >
         BIO
       </h2>
       <p
-        class="whitespace-pre-line text-justify text-lg leading-relaxed text-gray-600 dark:text-white sm:leading-loose"
+        class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-lg sm:leading-loose"
       >
         {{
           globalStore.language === 'pt-BR'
