@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useGlobalStore } from '../stores/globalStore';
+
+const globalStore = useGlobalStore();
+</script>
 
 <template>
   <main
@@ -6,7 +10,11 @@
   >
     <h1 class="text-8xl font-bold text-gray-600 dark:text-white">404</h1>
     <h2 class="text-center text-4xl font-bold text-gray-600 dark:text-white">
-      Página não encontrada
+      {{
+        globalStore.language === 'pt-BR'
+          ? 'Página não encontrada'
+          : 'Page not found'
+      }}
     </h2>
   </main>
 </template>
