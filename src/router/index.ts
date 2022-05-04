@@ -4,6 +4,7 @@ import About from '../views/About.vue';
 import Skills from '../views/Skills.vue';
 import Works from '../views/Works.vue';
 import Contact from '../views/Contact.vue';
+import NotFound from '../views/NotFound.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,7 @@ const router = createRouter({
       name: 'Contact',
       component: Contact,
     },
+    { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
   ],
 });
 
