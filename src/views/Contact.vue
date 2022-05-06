@@ -14,7 +14,7 @@ const globalStore = useGlobalStore();
       >
         {{
           globalStore.language === 'pt-BR'
-            ? 'Fique à vontade para em contato comigo :)'
+            ? 'Fique à vontade para entrar em contato comigo :)'
             : 'Feel free to contact me :)'
         }}
       </p>
