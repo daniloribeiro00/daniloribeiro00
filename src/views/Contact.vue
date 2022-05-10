@@ -23,7 +23,7 @@ const globalStore = useGlobalStore();
           <a
             href="https://www.linkedin.com/in/daniloribeiro00/"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ const globalStore = useGlobalStore();
           <a
             href="https://github.com/daniloribeiro00"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@ const globalStore = useGlobalStore();
           <a
             href="mailto:danilo@duarteribeiro.com.br"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               class="h-7 w-7"

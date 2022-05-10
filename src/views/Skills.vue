@@ -21,7 +21,7 @@ const globalStore = useGlobalStore();
           <a
             href="https://developer.mozilla.org/docs/Web/JavaScript"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ const globalStore = useGlobalStore();
           <a
             href="https://www.typescriptlang.org"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,6 @@ const globalStore = useGlobalStore();
               version="1.1"
               viewBox="0 0 512 512"
             >
-              <title>TypeScript logo</title>
               <rect width="512" height="512" rx="50" fill="#3178c6" />
               <path
                 d="m317 407v50c8.1 4.2 18 7.3 29 9.4s23 3.1 35 3.1c12 0 23-1.1 34-3.4 11-2.3 20-6.1 28-11 8.1-5.3 15-12 19-21s7.1-19 7.1-32c0-9.1-1.4-17-4.1-24s-6.6-13-12-18c-5.1-5.3-11-10-18-14s-15-8.2-24-12c-6.6-2.7-12-5.3-18-7.9-5.2-2.6-9.7-5.2-13-7.8-3.7-2.7-6.5-5.5-8.5-8.4-2-3-3-6.3-3-10 0-3.4 0.89-6.5 2.7-9.3s4.3-5.1 7.5-7.1c3.2-2 7.2-3.5 12-4.6 4.7-1.1 9.9-1.6 16-1.6 4.2 0 8.6 0.31 13 0.94 4.6 0.63 9.3 1.6 14 2.9 4.7 1.3 9.3 2.9 14 4.9 4.4 2 8.5 4.3 12 6.9v-47c-7.6-2.9-16-5.1-25-6.5s-19-2.1-31-2.1c-12 0-23 1.3-34 3.8s-20 6.5-28 12c-8.1 5.4-14 12-19 21-4.7 8.4-7 18-7 30 0 15 4.3 28 13 38 8.6 11 22 19 39 27 6.9 2.8 13 5.6 19 8.3s11 5.5 15 8.4c4.3 2.9 7.7 6.1 10 9.5 2.5 3.4 3.8 7.4 3.8 12 0 3.2-0.78 6.2-2.3 9s-3.9 5.2-7.1 7.2-7.1 3.6-12 4.8c-4.7 1.1-10 1.7-17 1.7-11 0-22-1.9-32-5.7-11-3.8-21-9.5-30-17zm-84-123h64v-41h-179v41h64v183h51z"
@@ -80,7 +79,7 @@ const globalStore = useGlobalStore();
           <a
             href="https://vuejs.org"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               class="h-7 w-7 min-w-[1.75rem]"
@@ -105,7 +104,7 @@ const globalStore = useGlobalStore();
           <a
             href="https://reactjs.org"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +125,7 @@ const globalStore = useGlobalStore();
           <a
             href="https://nextjs.org"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +192,7 @@ const globalStore = useGlobalStore();
                 : 'https://www.atlassian.com/agile/scrum'
             "
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               class="h-7 w-7 min-w-[1.75rem]"
@@ -216,7 +215,7 @@ const globalStore = useGlobalStore();
                 : 'https://www.atlassian.com/agile/scrum'
             "
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               class="mb-0.5 h-7 w-7 min-w-[1.75rem]"
@@ -242,28 +241,36 @@ const globalStore = useGlobalStore();
       <ul
         class="grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
       >
-        <li
-          class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
-        >
-          <svg
-            class="h-7 w-7 min-w-[1.75rem]"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+        <li>
+          <a
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
+            :href="
+              globalStore.language === 'pt-BR'
+                ? 'https://www.alura.com.br/artigos/ux-e-ui-conheca-as-semelhancas-e-diferencas-entre-ambos?gclid=Cj0KCQjwmuiTBhDoARIsAPiv6L9Bd3281c2nKnTKuntbA7W87rXx0h6SNRct-1e5rLtJr7LzraqnRhUaAhwLEALw_wcB'
+                : 'https://careerfoundry.com/en/blog/ux-design/the-difference-between-ux-and-ui-design-a-laymans-guide/'
+            "
+            target="_blank"
           >
-            <path
-              fill-rule="evenodd"
-              d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z"
-              clip-rule="evenodd"
-            />
-          </svg>
-          UI/UX
+            <svg
+              class="h-7 w-7 min-w-[1.75rem]"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            UI/UX
+          </a>
         </li>
         <li>
           <a
             href="https://git-scm.com"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -289,7 +296,7 @@ const globalStore = useGlobalStore();
           <a
             href="http://github.com"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -312,7 +319,7 @@ const globalStore = useGlobalStore();
           <a
             href="https://gitlab.com"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               data-v-5a86f8c0=""
@@ -346,7 +353,7 @@ const globalStore = useGlobalStore();
           <a
             href="https://tailwindcss.com"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -378,7 +385,7 @@ const globalStore = useGlobalStore();
           <a
             href="https://flutter.dev"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -484,7 +491,7 @@ const globalStore = useGlobalStore();
           <a
             href="https://v3.nuxtjs.org"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -510,7 +517,7 @@ const globalStore = useGlobalStore();
           <a
             href="https://aws.amazon.com"
             target="_blank"
-            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 dark:text-white"
+            class="flex items-center gap-2 whitespace-pre-line text-justify text-lg font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
