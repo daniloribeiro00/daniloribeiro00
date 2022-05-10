@@ -50,9 +50,54 @@ const myAge = () => {
       >
         {{
           globalStore.language === 'pt-BR'
-            ? 'Bacharel em Sistemas de Informação pelo UniFOA (Centro Universitário de Volta Redonda - RJ).'
-            : 'Bachelor in Information Systems at UniFOA (Volta Redonda University Center) in Brazil.'
+            ? 'Bacharel em Sistemas de Informação pelo '
+            : 'Bachelor in Information Systems at'
         }}
+        <a
+          href="https://www.unifoa.edu.br"
+          target="_blank"
+          class="font-semibold transition-colors hover:text-violet-600 dark:font-bold dark:hover:text-violet-500"
+        >
+          {{
+            globalStore.language === 'pt-BR'
+              ? 'UniFOA (Centro Universitário de Volta Redonda - RJ)'
+              : 'UniFOA (Volta Redonda University Center)'
+          }} </a
+        >{{ globalStore.language === 'pt-BR' ? '.' : ' in Brazil.' }}
+      </p>
+      <p
+        class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-lg sm:leading-loose"
+      >
+        {{
+          globalStore.language === 'pt-BR'
+            ? 'Curso de Hardware, Montagem e Manutenção de Computadores na '
+            : 'Hardware, Assembly and Maintenance of Computers course at'
+        }}
+        <a
+          href="https://microcamp.com.br"
+          target="_blank"
+          class="font-semibold transition-colors hover:text-violet-600 dark:font-bold dark:hover:text-violet-500"
+        >
+          MicroCamp</a
+        >.
+      </p>
+      <p
+        class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-lg sm:leading-loose"
+      >
+        {{
+          globalStore.language === 'pt-BR'
+            ? 'Curso de inglês do básico ao avançado na '
+            : 'English course from basic to advanced at '
+        }}
+        <a
+          href="https://www.edidiomas.com.br"
+          target="_blank"
+          class="font-semibold transition-colors hover:text-violet-600 dark:font-bold dark:hover:text-violet-500"
+        >
+          {{
+            globalStore.language === 'pt-BR' ? "Ed's Idiomas" : "Ed's School"
+          }}</a
+        >.
       </p>
     </div>
     <div class="flex w-full flex-col gap-2">
@@ -76,7 +121,7 @@ const myAge = () => {
         <a
           href="https://www.linkedin.com/company/tecnospeed-ti/"
           target="_blank"
-          class="font-semibold"
+          class="font-semibold transition-colors hover:text-violet-600 dark:font-bold dark:hover:text-violet-500"
         >
           TecnoSpeed</a
         >.

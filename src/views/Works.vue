@@ -46,7 +46,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://vuejs.org"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 dark:text-white md:text-sm lg:text-lg"
+              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
             >
               <svg
                 class="logo"
@@ -71,7 +71,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://www.typescriptlang.org"
               target="_blank"
-              class="text-md ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 dark:text-white md:text-sm lg:text-lg"
+              class="text-md ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://tailwindcss.com"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 dark:text-white md:text-sm lg:text-lg"
+              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +200,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://vuejs.org"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 dark:text-white md:text-sm lg:text-lg"
+              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
             >
               <svg
                 class="logo"
@@ -225,7 +225,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://www.typescriptlang.org"
               target="_blank"
-              class="text-md ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 dark:text-white md:text-sm lg:text-lg"
+              class="text-md ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -252,7 +252,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://tailwindcss.com"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 dark:text-white md:text-sm lg:text-lg"
+              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -437,7 +437,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://vuejs.org"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 dark:text-white md:text-sm lg:text-lg"
+              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
             >
               <svg
                 class="logo"
@@ -462,7 +462,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://www.typescriptlang.org"
               target="_blank"
-              class="text-md ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 dark:text-white md:text-sm lg:text-lg"
+              class="text-md ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -489,7 +489,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://tailwindcss.com"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 dark:text-white md:text-sm lg:text-lg"
+              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
