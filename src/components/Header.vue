@@ -127,6 +127,7 @@ watch(darkMode, () => {
       </nav>
       <div class="flex h-full w-40 items-center justify-end gap-4">
         <button
+          aria-label="{{ globalStore.language === 'pt-BR' ? 'Change to English' : 'Mudar para português' }}"
           type="button"
           class="flex items-center justify-center gap-1.5 rounded-full text-gray-600 outline-none ring-violet-600 ring-offset-2 transition-colors duration-200 ease-in-out hover:text-violet-600 focus:ring dark:text-white dark:hover:text-violet-500"
           @click="setLanguage"
