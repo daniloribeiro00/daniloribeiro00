@@ -51,7 +51,7 @@ const myAge = () => {
         {{
           globalStore.language === 'pt-BR'
             ? 'Bacharel em Sistemas de Informação pelo '
-            : "Bachelor's in Information Systems at"
+            : 'Bachelor o Information Systems at'
         }}
         <a
           href="https://www.unifoa.edu.br"
