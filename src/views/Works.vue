@@ -11,10 +11,13 @@ const globalStore = useGlobalStore();
   >
     <div class="flex w-full flex-col gap-2">
       <h2
-        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+        class="mb-4 text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
       >
-        PLUG4MARKET
+        PROJETOS
       </h2>
+      <h3 class="text-lg font-bold text-gray-600 dark:text-white sm:text-xl">
+        Plug4Market
+      </h3>
       <div class="flex w-full flex-col gap-8 md:flex-row">
         <div
           class="flex aspect-video w-full items-center justify-center rounded-xl border border-violet-600 bg-white md:w-1/2"
@@ -164,11 +167,9 @@ const globalStore = useGlobalStore();
       </div>
     </div>
     <div class="flex w-full flex-col gap-2">
-      <h2
-        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
-      >
-        PLUG4FOODS
-      </h2>
+      <h3 class="text-lg font-bold text-gray-600 dark:text-white sm:text-xl">
+        Plug4Foods
+      </h3>
       <div class="flex w-full flex-col gap-8 md:flex-row">
         <div
           class="flex aspect-video w-full items-center justify-center rounded-xl border border-violet-600 bg-white md:w-1/2"
@@ -318,15 +319,13 @@ const globalStore = useGlobalStore();
       </div>
     </div>
     <div class="flex w-full flex-col gap-2">
-      <h2
-        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
-      >
+      <h3 class="text-lg font-bold text-gray-600 dark:text-white sm:text-xl">
         {{
           globalStore.language === 'pt-BR'
-            ? 'DESIGN SYSTEM TECNOSPEED'
-            : 'TECNOSPEED DESIGN SYSTEM'
+            ? 'Design System TecnoSpeed'
+            : 'TecnoSpeed Design System'
         }}
-      </h2>
+      </h3>
       <div class="flex w-full flex-col gap-8 md:flex-row">
         <div
           class="flex aspect-video w-full items-center justify-center rounded-xl border border-violet-600 bg-white md:w-1/2"
@@ -508,6 +507,79 @@ const globalStore = useGlobalStore();
           </div>
         </div>
       </div>
+    </div>
+    <div class="mt-2 flex w-full flex-col gap-4">
+      <h2
+        class="mb-4 text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+      >
+        ARTIGOS
+      </h2>
+      <a
+        :href="
+          globalStore.language === 'pt-BR'
+            ? 'https://blog.casadodesenvolvedor.com.br/design-system/'
+            : 'https://blog-casadodesenvolvedor-com-br.translate.goog/design-system/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=pt-BR&_x_tr_pto=wapp'
+        "
+        target="_blank"
+        class="flex cursor-pointer items-center justify-between rounded-xl border border-violet-600 bg-white p-6 transition-colors hover:bg-violet-200 dark:bg-zinc-700 dark:hover:bg-violet-900"
+      >
+        <h3
+          class="w-full text-center text-lg font-bold text-violet-600 dark:text-white sm:text-xl"
+        >
+          {{
+            globalStore.language === 'pt-BR'
+              ? 'Como manter a consistência no design de projetos com um Design System?'
+              : 'How to maintain consistency in project design with a Design System?'
+          }}
+        </h3>
+        <svg
+          class="h-6 w-6 text-violet-600 dark:text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </a>
+      <a
+        :href="
+          globalStore.language === 'pt-BR'
+            ? 'https://forum.casadodesenvolvedor.com.br/topic/43530-como-agilizar-o-processo-de-estilização-do-seu-aplicativo-web-com-o-tailwind-css/'
+            : 'https://forum-casadodesenvolvedor-com-br.translate.goog/topic/43530-como-agilizar-o-processo-de-estilização-do-seu-aplicativo-web-com-o-tailwind-css/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=pt-BR&_x_tr_pto=wapp'
+        "
+        target="_blank"
+        class="flex cursor-pointer items-center justify-between rounded-xl border border-violet-600 bg-white p-6 transition-colors hover:bg-violet-200 dark:bg-zinc-700 dark:hover:bg-violet-900"
+      >
+        <h3
+          class="w-full text-center text-lg font-bold text-violet-600 dark:text-white sm:text-xl"
+        >
+          {{
+            globalStore.language === 'pt-BR'
+              ? 'Como agilizar o processo de estilização do seu aplicativo web com o Tailwind CSS'
+              : 'How to speed up your web app styling process with Tailwind CSS'
+          }}
+        </h3>
+        <svg
+          class="h-6 w-6 text-violet-600 dark:text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </a>
     </div>
   </main>
 </template>

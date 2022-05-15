@@ -62,7 +62,7 @@ watch(darkMode, () => {
         </button>
       </div>
       <nav
-        class="hidden h-full w-1/3 items-center justify-center gap-4 md:flex"
+        class="hidden h-full w-1/3 items-center justify-center gap-3 md:flex lg:gap-4"
       >
         <button
           type="button"
@@ -97,7 +97,7 @@ watch(darkMode, () => {
             class="border-y-2 border-transparent py-1 text-xs font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white"
             activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
           >
-            SKILLS
+            {{ globalStore.language === 'pt-BR' ? 'HABILIDADES' : 'SKILLS' }}
           </router-link>
         </button>
         <button
@@ -109,7 +109,7 @@ watch(darkMode, () => {
             class="border-y-2 border-transparent py-1 text-xs font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white"
             activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
           >
-            {{ globalStore.language === 'pt-BR' ? 'PROJETOS' : 'WORKS' }}
+            {{ globalStore.language === 'pt-BR' ? 'TRABALHOS' : 'WORKS' }}
           </router-link>
         </button>
         <button
@@ -206,7 +206,7 @@ watch(darkMode, () => {
       >
         <router-link
           to="/"
-          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-xs"
+          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-[0.7rem]"
           activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500 hover:border-b-violet-600"
         >
           HOME
@@ -218,7 +218,7 @@ watch(darkMode, () => {
       >
         <router-link
           to="/about"
-          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-xs"
+          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-[0.7rem]"
           activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
         >
           {{ globalStore.language === 'pt-BR' ? 'SOBRE' : 'ABOUT' }}
@@ -230,10 +230,10 @@ watch(darkMode, () => {
       >
         <router-link
           to="/skills"
-          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-xs"
+          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-[0.7rem]"
           activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
         >
-          SKILLS
+          {{ globalStore.language === 'pt-BR' ? 'HABILIDADES' : 'SKILLS' }}
         </router-link>
       </button>
       <button
@@ -242,10 +242,10 @@ watch(darkMode, () => {
       >
         <router-link
           to="/works"
-          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-xs"
+          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-[0.7rem]"
           activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
         >
-          {{ globalStore.language === 'pt-BR' ? 'PROJETOS' : 'WORKS' }}
+          {{ globalStore.language === 'pt-BR' ? 'TRABALHOS' : 'WORKS' }}
         </router-link>
       </button>
       <button
@@ -254,7 +254,7 @@ watch(darkMode, () => {
       >
         <router-link
           to="/contact"
-          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-xs"
+          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-[0.7rem]"
           activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
         >
           {{ globalStore.language === 'pt-BR' ? 'CONTATO' : 'CONTACT' }}

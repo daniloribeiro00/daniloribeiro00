@@ -4,7 +4,7 @@ Olá, meu nome é Danilo Ribeiro! Sou desenvolvedor front-end, amante de UI/UX e
 
 Hi there, my name is Danilo Ribeiro! I'm a front-end developer, UI/UX and design lover, graduated in Information Systems. Currently I'm working as a junior front-end developer at [Tecnospeed](https://tecnospeed.com.br) innovation lab.
 
-## Skills 🚀
+## Habilidades / Skills 🚀
 
 - Linguagens / Languages
   - JavaScript
