@@ -508,6 +508,161 @@ const globalStore = useGlobalStore();
         </div>
       </div>
     </div>
+    <div class="flex w-full flex-col gap-2">
+      <h3 class="text-lg font-bold text-gray-600 dark:text-white sm:text-xl">
+        FastRemedy
+      </h3>
+      <div class="flex w-full flex-col gap-8 md:flex-row">
+        <div
+          class="flex aspect-video w-full items-center justify-center rounded-xl border border-violet-600 bg-[#59c0b3] md:w-1/2"
+        >
+          <img
+            src="/fast-remedy.png"
+            alt="Fast Remedy"
+            class="aspect-video rounded-xl object-cover"
+          />
+        </div>
+        <div class="flex w-full flex-col gap-4 md:w-1/2">
+          <p
+            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+          >
+            {{
+              globalStore.language === 'pt-BR'
+                ? 'Marketplace de farmácias e lojas de cosméticos inspirado no iFood, construído como projeto final (TCC) da faculdade de Sistemas de Informação em 2021.'
+                : 'Marketplace of drug stores inspired by Uber Eats, built as a final project of Information Systems university in 2021.'
+            }}
+          </p>
+          <p
+            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+          >
+            {{
+              globalStore.language === 'pt-BR'
+                ? 'Construído com:'
+                : 'Built with:'
+            }}
+          </p>
+          <div
+            class="flex flex-col flex-wrap items-start gap-x-8 gap-y-4 sm:flex-row sm:items-center"
+          >
+            <a
+              href="https://reactjs.org"
+              target="_blank"
+              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7 min-w-[1.75rem]"
+                viewBox="-11.5 -10.23174 23 20.46348"
+              >
+                <circle cx="0" cy="0" r="2.05" fill="#61dafb" />
+                <g stroke="#61dafb" stroke-width="1" fill="none">
+                  <ellipse rx="11" ry="4.2" />
+                  <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                  <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+                </g>
+              </svg>
+              React
+            </a>
+            <a
+              href="https://nextjs.org"
+              target="_blank"
+              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="mt-0.5 h-7 w-7 min-w-[1.75rem] text-black dark:text-white"
+                viewBox="0 0 207 124"
+                version="1.1"
+                fill="currentColor"
+              >
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Black-Next.js"
+                    transform="translate(-247.000000, -138.000000)"
+                    fill="currentColor"
+                    fill-rule="nonzero"
+                  >
+                    <g
+                      id="next-black"
+                      transform="translate(247.000000, 138.000000)"
+                    >
+                      <g id="EXT-+-Type-something">
+                        <path
+                          d="M48.9421964,32.6320058 L87.9011585,32.6320058 L87.9011585,35.7136421 L52.5134345,35.7136421 L52.5134345,58.9070103 L85.7908813,58.9070103 L85.7908813,61.9886466 L52.5134345,61.9886466 L52.5134345,87.4526941 L88.306981,87.4526941 L88.306981,90.5343303 L48.9421964,90.5343303 L48.9421964,32.6320058 Z M91.3912326,32.6320058 L95.5306221,32.6320058 L113.8738,58.0960534 L132.622801,32.6320058 L158.124498,0.286809811 L116.22757,60.7722112 L137.817329,90.5343303 L133.51561,90.5343303 L113.8738,63.4483691 L94.1508254,90.5343303 L89.9302715,90.5343303 L111.682358,60.7722112 L91.3912326,32.6320058 Z M139.359455,35.713642 L139.359455,32.6320058 L183.756439,32.6320058 L183.756439,35.7136421 L163.302983,35.7136421 L163.302983,90.5343303 L159.731745,90.5343303 L159.731745,35.7136421 L139.359455,35.713642 Z"
+                          id="EXT"
+                        />
+                        <polygon
+                          id="Type-something"
+                          points="0.202923647 32.6320058 4.66697141 32.6320058 66.2235778 124.303087 40.785176 90.5343303 3.93649086 37.0111732 3.77416185 90.5343303 0.202923647 90.5343303"
+                        />
+                      </g>
+                      <path
+                        d="M183.396622,86.5227221 C184.134938,86.5227221 184.673474,85.9601075 184.673474,85.233037 C184.673474,84.5059658 184.134938,83.9433513 183.396622,83.9433513 C182.666993,83.9433513 182.11977,84.5059658 182.11977,85.233037 C182.11977,85.9601075 182.666993,86.5227221 183.396622,86.5227221 Z M186.905793,83.1297235 C186.905793,85.2763149 188.460599,86.678523 190.727662,86.678523 C193.142388,86.678523 194.601647,85.233037 194.601647,82.7229099 L194.601647,73.8855335 L192.655968,73.8855335 L192.655968,82.7142542 C192.655968,84.1078073 191.952397,84.8521899 190.710289,84.8521899 C189.598473,84.8521899 188.842785,84.1597409 188.816727,83.1297235 L186.905793,83.1297235 Z M197.146664,83.0172011 C197.285642,85.2503478 199.153145,86.678523 201.932686,86.678523 C204.903321,86.678523 206.762139,85.1811034 206.762139,82.792155 C206.762139,80.9138876 205.702439,79.8752151 203.131364,79.2779777 L201.750279,78.9404092 C200.117298,78.5595622 199.457158,78.0488813 199.457158,77.1573541 C199.457158,76.0321243 200.482113,75.296398 202.019547,75.296398 C203.478806,75.296398 204.48639,76.0148135 204.668797,77.1660091 L206.562359,77.1660091 C206.44944,75.0626962 204.590622,73.5825873 202.045605,73.5825873 C199.309495,73.5825873 197.48542,75.0626962 197.48542,77.2871878 C197.48542,79.1221767 198.519063,80.2127835 200.786126,80.7407758 L202.401734,81.1302779 C204.060773,81.5197807 204.790402,82.091051 204.790402,83.0431676 C204.790402,84.1510859 203.643842,84.9560573 202.08035,84.9560573 C200.403939,84.9560573 199.240006,84.2030196 199.074971,83.0172011 L197.146664,83.0172011 Z"
+                        id=".JS"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              Next.js
+            </a>
+          </div>
+          <Button class="mt-2" type="button">
+            <a
+              href="https://fast-remedy-ui.herokuapp.com"
+              target="_blank"
+              class="flex items-center justify-center gap-2 whitespace-pre-line text-justify leading-relaxed text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              {{ globalStore.language === 'pt-BR' ? 'Acessar' : 'Visit' }}
+            </a>
+          </Button>
+          <Button class="mt-2" type="button">
+            <a
+              href="https://github.com/Fast-Remedy/fast-remedy"
+              target="_blank"
+              class="flex items-center justify-center gap-2 whitespace-pre-line text-justify leading-relaxed text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 min-w-[1.75rem] text-[#1B1F23] dark:text-white"
+                viewBox="0 0 1024 1024"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                  transform="scale(64)"
+                  fill="currentColor"
+                />
+              </svg>
+              GitHub
+            </a>
+          </Button>
+        </div>
+      </div>
+    </div>
     <div class="mt-2 flex w-full flex-col gap-4">
       <h2
         class="mb-4 text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
