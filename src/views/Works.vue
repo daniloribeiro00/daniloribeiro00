@@ -16,6 +16,142 @@ const globalStore = useGlobalStore();
         PROJETOS
       </h2>
       <h3 class="text-lg font-bold text-gray-600 dark:text-white sm:text-xl">
+        PlugNotas
+      </h3>
+      <div class="flex w-full flex-col gap-8 md:flex-row">
+        <div
+          class="flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl border border-violet-600 bg-white md:w-1/2"
+        >
+          <img class="w-full rounded-xl" src="/plugnotas.png" alt="PlugNotas" />
+        </div>
+        <div class="flex w-full flex-col gap-4 md:w-1/2">
+          <p
+            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+          >
+            {{
+              globalStore.language === 'pt-BR'
+                ? 'Interface do sistema de gerenciamento de notas fiscais da TecnoSpeed.'
+                : "User Interface of TecnoSpeed's system for managing invoices."
+            }}
+          </p>
+          <p
+            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+          >
+            {{
+              globalStore.language === 'pt-BR'
+                ? 'Construído com:'
+                : 'Built with:'
+            }}
+          </p>
+          <div
+            class="flex flex-col flex-wrap items-start gap-x-8 gap-y-4 sm:flex-row sm:items-center"
+          >
+            <a
+              href="https://vuejs.org"
+              target="_blank"
+              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+            >
+              <svg
+                class="logo"
+                viewBox="0 0 128 128"
+                width="30"
+                height="30"
+                data-v-1c32dc7e=""
+              >
+                <path
+                  fill="#42b883"
+                  d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z"
+                  data-v-1c32dc7e=""
+                />
+                <path
+                  fill="#35495e"
+                  d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z"
+                  data-v-1c32dc7e=""
+                />
+              </svg>
+              Vue.js 3
+            </a>
+            <a
+              href="https://www.typescriptlang.org"
+              target="_blank"
+              class="text-md ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                width="30"
+                height="30"
+                fill="none"
+                version="1.1"
+                viewBox="0 0 512 512"
+              >
+                <rect width="512" height="512" rx="50" fill="#3178c6" />
+                <path
+                  d="m317 407v50c8.1 4.2 18 7.3 29 9.4s23 3.1 35 3.1c12 0 23-1.1 34-3.4 11-2.3 20-6.1 28-11 8.1-5.3 15-12 19-21s7.1-19 7.1-32c0-9.1-1.4-17-4.1-24s-6.6-13-12-18c-5.1-5.3-11-10-18-14s-15-8.2-24-12c-6.6-2.7-12-5.3-18-7.9-5.2-2.6-9.7-5.2-13-7.8-3.7-2.7-6.5-5.5-8.5-8.4-2-3-3-6.3-3-10 0-3.4 0.89-6.5 2.7-9.3s4.3-5.1 7.5-7.1c3.2-2 7.2-3.5 12-4.6 4.7-1.1 9.9-1.6 16-1.6 4.2 0 8.6 0.31 13 0.94 4.6 0.63 9.3 1.6 14 2.9 4.7 1.3 9.3 2.9 14 4.9 4.4 2 8.5 4.3 12 6.9v-47c-7.6-2.9-16-5.1-25-6.5s-19-2.1-31-2.1c-12 0-23 1.3-34 3.8s-20 6.5-28 12c-8.1 5.4-14 12-19 21-4.7 8.4-7 18-7 30 0 15 4.3 28 13 38 8.6 11 22 19 39 27 6.9 2.8 13 5.6 19 8.3s11 5.5 15 8.4c4.3 2.9 7.7 6.1 10 9.5 2.5 3.4 3.8 7.4 3.8 12 0 3.2-0.78 6.2-2.3 9s-3.9 5.2-7.1 7.2-7.1 3.6-12 4.8c-4.7 1.1-10 1.7-17 1.7-11 0-22-1.9-32-5.7-11-3.8-21-9.5-30-17zm-84-123h64v-41h-179v41h64v183h51z"
+                  clip-rule="evenodd"
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  style="fill: #fff"
+                />
+              </svg>
+              TypeScript
+            </a>
+            <a
+              href="https://tailwindcss.com"
+              target="_blank"
+              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                class="h-7 w-7 min-w-[1.75rem]"
+                viewBox="0 0 54 33"
+              >
+                <g clip-path="url(#prefix__clip0)">
+                  <path
+                    fill="#38bdf8"
+                    fill-rule="evenodd"
+                    d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+                    clip-rule="evenodd"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="prefix__clip0">
+                    <path fill="#fff" d="M0 0h54v32.4H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Tailwind CSS
+            </a>
+          </div>
+          <Button class="mt-4" type="button">
+            <a
+              href="https://plugnotas.com.br/"
+              target="_blank"
+              class="flex items-center justify-center gap-2 whitespace-pre-line text-justify leading-relaxed text-white"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
+                />
+              </svg>
+              {{
+                globalStore.language === 'pt-BR' ? 'Saiba mais' : 'Learn more'
+              }}
+            </a>
+          </Button>
+        </div>
+      </div>
+    </div>
+    <div class="flex w-full flex-col gap-2">
+      <h3 class="text-lg font-bold text-gray-600 dark:text-white sm:text-xl">
         Plug4Market
       </h3>
       <div class="flex w-full flex-col gap-8 md:flex-row">
@@ -31,7 +167,7 @@ const globalStore = useGlobalStore();
             {{
               globalStore.language === 'pt-BR'
                 ? 'Interface do sistema de integração de ERPs com marketplaces da TecnoSpeed.'
-                : "UI from TecnoSpeed's system for integrating ERP with marketplaces."
+                : "User Interface of TecnoSpeed's system for integrating ERP with marketplaces."
             }}
           </p>
           <p
@@ -174,6 +310,7 @@ const globalStore = useGlobalStore();
         </div>
       </div>
     </div>
+
     <div class="flex w-full flex-col gap-2">
       <h3 class="text-lg font-bold text-gray-600 dark:text-white sm:text-xl">
         Plug4Foods
@@ -191,7 +328,7 @@ const globalStore = useGlobalStore();
             {{
               globalStore.language === 'pt-BR'
                 ? 'Interface do hub de integração de ERPs com food deliveries da TecnoSpeed. Semelhante ao Plug4Market.'
-                : "UI from TecnoSpeed's hub for integrating ERP with food deliveries. Similar to Plug4Market."
+                : "User Interface of TecnoSpeed's hub for integrating ERP with food deliveries. Similar to Plug4Market."
             }}
           </p>
           <p
