@@ -1,8 +1,8 @@
 # Minha bio / My bio 😃
 
-Olá, meu nome é Danilo Ribeiro! Sou desenvolvedor front-end, amante de UI/UX e design, formado de Sistemas de Informação na UniFOA (Centro Universitário de Volta Redonda). Atualmente, trabalho como desenvolvedor front-end júnior no SpeedLab, o laboratório de inovações da [Tecnospeed](https://tecnospeed.com.br).
+Olá, meu nome é Danilo Ribeiro! Sou desenvolvedor front-end, amante de UI/UX e design, formado de Sistemas de Informação na UniFOA (Centro Universitário de Volta Redonda). Atualmente, trabalho como desenvolvedor front-end júnior na [Tecnospeed](https://tecnospeed.com.br).
 
-Hi there, my name is Danilo Ribeiro! I'm a front-end developer, UI/UX and design lover, graduated in Information Systems. Currently I'm working as a junior front-end developer at [Tecnospeed](https://tecnospeed.com.br) innovation lab.
+Hi there, my name is Danilo Ribeiro! I'm a front-end developer, UI/UX and design lover, graduated in Information Systems. Currently I'm working as a junior front-end developer at [Tecnospeed](https://tecnospeed.com.br).
 
 ## Habilidades / Skills 🚀
 
@@ -30,11 +30,12 @@ Hi there, my name is Danilo Ribeiro! I'm a front-end developer, UI/UX and design
   - Tailwind CSS
   - Git
   - GitHub
-  - GitLab / GitLab CI
+  - GitLab
 
 <br />
 
 - Interesses / Interests
+  - Dart
   - Flutter
   - Nuxt.js
   - AWS
