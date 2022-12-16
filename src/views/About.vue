@@ -222,8 +222,8 @@ const myAge = () => {
         </a>
         {{
           globalStore.language === 'pt-BR'
-            ? 'Responsável pela criação, manutenção e aprimoramento de aplicações front-web no SpeedLab, o laboratório de inovação da TecnoSpeed, utilizando Vue.js 3 e Tailwind CSS, seguindo o conceito de MVP (Minimum Viable Product) até sua estruturação e lançamento.\nAlém disso, responsável também por manter bibliotecas internas no NPM local da empresa bem como um dos principais contribuintes na criação do design system da TecnoSpeed.'
-            : "Responsible for creating, maintaining and improving front-web applications in the TecnoSpeed's innovation lab using Vue.js 3 and Tailwind CSS following the MVP (Minimum Viable Product) until their later structuring and release.\nIn addition, responsible for maintaining internal libraries in the local NPM and also one of the main creators of the TecnoSpeed's design system."
+            ? 'Responsável pela criação, manutenção e aprimoramento de aplicações front-end no DFe da TecnoSpeed, utilizando Vue.js 3 e Tailwind CSS, contribuindo para melhoria contínua dos sistemas fiscais utilizados em todo o Brasil.\nTambém atuei no SpeedLab, o laboratório de inovação da TecnoSpeed, seguindo o conceito de MVP (Minimum Viable Product) até a estruturação e lançamento do produto.\nAlém disso, responsável também por manter bibliotecas internas no NPM local da empresa bem como um dos principais contribuintes na criação do design system da TecnoSpeed.'
+            : "Responsible for creating, maintaining and improving front-end applications in TecnoSpeed's fiscal documents sector, using Vue.js 3 and Tailwind CSS, contributing to the continuous improvement of the tax systems used throughout Brazil.\nI also worked in the TecnoSpeed's innovation lab following the MVP (Minimum Viable Product) until the later structuring and release of the product.\nIn addition, responsible for maintaining internal libraries in the local NPM and also one of the main creators of the TecnoSpeed's design system."
         }}
       </span>
     </div>
