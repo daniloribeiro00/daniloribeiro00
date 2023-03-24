@@ -14,6 +14,7 @@ Hi there, my name is Danilo Ribeiro! I'm a front-end developer, UI/UX and design
 
 - Frameworks / Libs
   - Vue.js
+  - Nuxt
   - React
   - Next.js
 
@@ -37,7 +38,6 @@ Hi there, my name is Danilo Ribeiro! I'm a front-end developer, UI/UX and design
 - Interesses / Interests
   - Dart
   - Flutter
-  - Nuxt.js
   - AWS
 
 <br />
