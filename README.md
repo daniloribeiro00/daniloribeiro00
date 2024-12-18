@@ -1,49 +1,23 @@
-# Minha bio / My bio 😃
+# Hi there! 😃
 
-Olá, meu nome é Danilo Ribeiro! Sou desenvolvedor front-end, amante de UI/UX e design, formado de Sistemas de Informação na UniFOA (Centro Universitário de Volta Redonda). Atualmente, trabalho como desenvolvedor front-end júnior na [Tecnospeed](https://tecnospeed.com.br).
+From an early age, I have been passionate about technology, which led me to graduate in Information Systems at UniFOA (Volta Redonda, Rio de Janeiro, Brazil) in 2021. Even before completing my degree, I was already working in the field.
 
-Hi there, my name is Danilo Ribeiro! I'm a front-end developer, UI/UX and design lover, graduated in Information Systems. Currently I'm working as a junior front-end developer at [Tecnospeed](https://tecnospeed.com.br).
+I started my career in 2021 at TecnoSpeed's innovation lab, where I specialized in Vue.js and TypeScript. Later, I joined several teams within the company, being responsible for designing and maintaining new modern and responsive interfaces for its main products. I worked with technologies such as Vue.js, Nuxt, TypeScript, and Tailwind CSS, and co-created and served as the lead maintainer of the company’s design system.
 
-## Habilidades / Skills 🚀
+My main focus is developing interfaces that combine design, functionality, and best practices in UI and UX, delivering high-quality solutions with a strong emphasis on user experience.
 
-- Linguagens / Languages
-  - JavaScript
-  - TypeScript
+[![My Website](https://img.shields.io/badge/Visit%20My%20Website-000000?logoColor=white)](https://danilo.duarteribeiro.com.br/)
 
-<br />
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daniloribeiro00/)
 
-- Frameworks / Libs
-  - Vue.js
-  - Nuxt
-  - React
-  - Next.js
+## Skills
 
-<br />
-
-- Agile
-  - Kanban
-  - Scrum
-
-<br />
-
-- Outros / Others
-  - UI/UX
-  - Tailwind CSS
-  - Git
-  - GitHub
-  - GitLab
-
-<br />
-
-- Interesses / Interests
-  - Dart
-  - Flutter
-  - AWS
+- ![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?logo=vuedotjs&logoColor=%234FC08D)
+- ![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?logo=typescript&logoColor=white)
+- ![Nuxtjs](https://img.shields.io/badge/Nuxt-002E3B?logo=nuxtdotjs&logoColor=#00DC82)
+- ![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2FF.svg?logo=tailwind-css&logoColor=white)
+- ![UI/UX](https://img.shields.io/badge/UI/UX-102030?logoColor=white)
 
 <br />
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=daniloribeiro00&layout=compact&theme=tokyonight&hide=c%23)
-
-[danilo.duarteribeiro.com.br](https://danilo.duarteribeiro.com.br/)
-
-[linkedin.com/in/daniloribeiro00](https://www.linkedin.com/in/daniloribeiro00/)
