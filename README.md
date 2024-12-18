@@ -6,16 +6,16 @@ I started my career in 2021 at TecnoSpeed's innovation lab, where I specialized 
 
 My main focus is developing interfaces that combine design, functionality, and best practices in UI and UX, delivering high-quality solutions with a strong emphasis on user experience.
 
-[![My Website](https://img.shields.io/badge/Visit%20My%20Website-000000?logoColor=white)](https://danilo.duarteribeiro.com.br/)
+[![My Website](https://img.shields.io/badge/Visit%20My%20Website-102030?logoColor=white)](https://danilo.duarteribeiro.com.br/)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daniloribeiro00/)
 
 ## Skills
 
-- ![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?logo=vuedotjs&logoColor=%234FC08D)
-- ![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?logo=typescript&logoColor=white)
-- ![Nuxtjs](https://img.shields.io/badge/Nuxt-002E3B?logo=nuxtdotjs&logoColor=#00DC82)
-- ![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2FF.svg?logo=tailwind-css&logoColor=white)
+- [![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?logo=vuedotjs&logoColor=%234FC08D)](https://vuejs.org/)
+- [![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+- [![Nuxtjs](https://img.shields.io/badge/Nuxt-002E3B?logo=nuxtdotjs&logoColor=#00DC82)](https://nuxt.com/)
+- [![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2E2.svg?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 - ![UI/UX](https://img.shields.io/badge/UI/UX-102030?logoColor=white)
 
 <br />
