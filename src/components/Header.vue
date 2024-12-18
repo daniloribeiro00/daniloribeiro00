@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue';
-import { useGlobalStore } from '../stores/globalStore';
 import { Switch } from '@headlessui/vue';
+import { ref, watch } from 'vue';
+
+import { useGlobalStore } from '../stores/globalStore';
 
 const globalStore = useGlobalStore();
 
@@ -62,7 +63,7 @@ watch(darkMode, () => {
         </button>
       </div>
       <nav
-        class="hidden h-full w-1/3 items-center justify-center gap-3 md:flex lg:gap-4"
+        class="md:flex lg:gap-4 hidden h-full w-1/3 items-center justify-center gap-3"
       >
         <button
           type="button"
@@ -153,19 +154,19 @@ watch(darkMode, () => {
         <Switch
           v-model="darkMode"
           :class="darkMode ? 'bg-violet-500' : 'bg-gray-300'"
-          class="relative inline-flex h-6 w-12 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring sm:h-7 sm:w-14"
+          class="sm:h-7 sm:w-14 relative inline-flex h-6 w-12 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
         >
           <span class="sr-only">Dark mode</span>
           <span
             aria-hidden="true"
             :class="
-              darkMode ? 'translate-x-6 sm:translate-x-7' : 'translate-x-0'
+              darkMode ? 'sm:translate-x-7 translate-x-6' : 'translate-x-0'
             "
-            class="pointer-events-none flex h-5 w-5 transform items-center justify-center rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out sm:h-6 sm:w-6"
+            class="sm:h-6 sm:w-6 pointer-events-none flex h-5 w-5 transform items-center justify-center rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out"
           >
             <svg
               v-if="!darkMode"
-              class="h-4 w-4 text-gray-600 sm:h-5 sm:w-5"
+              class="sm:h-5 sm:w-5 h-4 w-4 text-gray-600"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +185,7 @@ watch(darkMode, () => {
             </svg>
             <svg
               v-else
-              class="h-4 w-4 text-gray-800 sm:h-5 sm:w-5"
+              class="sm:h-5 sm:w-5 h-4 w-4 text-gray-800"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +199,7 @@ watch(darkMode, () => {
       </div>
     </div>
     <nav
-      class="mt-3 flex h-full w-full items-center justify-center gap-3 md:hidden"
+      class="md:hidden mt-3 flex h-full w-full items-center justify-center gap-3"
     >
       <button
         type="button"

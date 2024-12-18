@@ -6,16 +6,16 @@ const globalStore = useGlobalStore();
 
 <template>
   <main
-    class="mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col items-center justify-center gap-y-12 px-8 sm:gap-12 sm:py-12 md:px-12"
+    class="sm:gap-12 sm:py-12 md:px-12 mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col items-center justify-center gap-y-12 px-8"
   >
     <div class="flex h-full w-full flex-col gap-4">
       <h2
-        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+        class="sm:text-2xl text-xl font-bold text-violet-600 dark:text-violet-500"
       >
         {{ globalStore.language === 'pt-BR' ? 'LINGUAGENS' : 'LANGUAGES' }}
       </h2>
       <ul
-        class="grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+        class="sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2"
       >
         <li>
           <a
@@ -28,7 +28,11 @@ const globalStore = useGlobalStore();
               viewBox="0 0 630 630"
               class="h-7 w-7 min-w-[1.75rem]"
             >
-              <rect width="630" height="630" fill="#f7df1e" />
+              <rect
+                width="630"
+                height="630"
+                fill="#f7df1e"
+              />
               <path
                 d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"
               />
@@ -52,7 +56,12 @@ const globalStore = useGlobalStore();
               version="1.1"
               viewBox="0 0 512 512"
             >
-              <rect width="512" height="512" rx="50" fill="#3178c6" />
+              <rect
+                width="512"
+                height="512"
+                rx="50"
+                fill="#3178c6"
+              />
               <path
                 d="m317 407v50c8.1 4.2 18 7.3 29 9.4s23 3.1 35 3.1c12 0 23-1.1 34-3.4 11-2.3 20-6.1 28-11 8.1-5.3 15-12 19-21s7.1-19 7.1-32c0-9.1-1.4-17-4.1-24s-6.6-13-12-18c-5.1-5.3-11-10-18-14s-15-8.2-24-12c-6.6-2.7-12-5.3-18-7.9-5.2-2.6-9.7-5.2-13-7.8-3.7-2.7-6.5-5.5-8.5-8.4-2-3-3-6.3-3-10 0-3.4 0.89-6.5 2.7-9.3s4.3-5.1 7.5-7.1c3.2-2 7.2-3.5 12-4.6 4.7-1.1 9.9-1.6 16-1.6 4.2 0 8.6 0.31 13 0.94 4.6 0.63 9.3 1.6 14 2.9 4.7 1.3 9.3 2.9 14 4.9 4.4 2 8.5 4.3 12 6.9v-47c-7.6-2.9-16-5.1-25-6.5s-19-2.1-31-2.1c-12 0-23 1.3-34 3.8s-20 6.5-28 12c-8.1 5.4-14 12-19 21-4.7 8.4-7 18-7 30 0 15 4.3 28 13 38 8.6 11 22 19 39 27 6.9 2.8 13 5.6 19 8.3s11 5.5 15 8.4c4.3 2.9 7.7 6.1 10 9.5 2.5 3.4 3.8 7.4 3.8 12 0 3.2-0.78 6.2-2.3 9s-3.9 5.2-7.1 7.2-7.1 3.6-12 4.8c-4.7 1.1-10 1.7-17 1.7-11 0-22-1.9-32-5.7-11-3.8-21-9.5-30-17zm-84-123h64v-41h-179v41h64v183h51z"
                 clip-rule="evenodd"
@@ -68,12 +77,12 @@ const globalStore = useGlobalStore();
     </div>
     <div class="flex h-full w-full flex-col gap-4">
       <h2
-        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+        class="sm:text-2xl text-xl font-bold text-violet-600 dark:text-violet-500"
       >
         FRAMEWORKS / LIBRARIES
       </h2>
       <ul
-        class="grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+        class="sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2"
       >
         <li>
           <a
@@ -111,11 +120,31 @@ const globalStore = useGlobalStore();
               class="h-7 w-7 min-w-[1.75rem]"
               viewBox="-11.5 -10.23174 23 20.46348"
             >
-              <circle cx="0" cy="0" r="2.05" fill="#61dafb" />
-              <g stroke="#61dafb" stroke-width="1" fill="none">
-                <ellipse rx="11" ry="4.2" />
-                <ellipse rx="11" ry="4.2" transform="rotate(60)" />
-                <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+              <circle
+                cx="0"
+                cy="0"
+                r="2.05"
+                fill="#61dafb"
+              />
+              <g
+                stroke="#61dafb"
+                stroke-width="1"
+                fill="none"
+              >
+                <ellipse
+                  rx="11"
+                  ry="4.2"
+                />
+                <ellipse
+                  rx="11"
+                  ry="4.2"
+                  transform="rotate(60)"
+                />
+                <ellipse
+                  rx="11"
+                  ry="4.2"
+                  transform="rotate(120)"
+                />
               </g>
             </svg>
             React
@@ -177,12 +206,12 @@ const globalStore = useGlobalStore();
     </div>
     <div class="flex h-full w-full flex-col gap-4">
       <h2
-        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+        class="sm:text-2xl text-xl font-bold text-violet-600 dark:text-violet-500"
       >
         AGILE
       </h2>
       <ul
-        class="grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+        class="sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2"
       >
         <li>
           <a
@@ -234,12 +263,12 @@ const globalStore = useGlobalStore();
     </div>
     <div class="flex h-full w-full flex-col gap-4">
       <h2
-        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+        class="sm:text-2xl text-xl font-bold text-violet-600 dark:text-violet-500"
       >
         {{ globalStore.language === 'pt-BR' ? 'OUTROS' : 'OTHERS' }}
       </h2>
       <ul
-        class="grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+        class="sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2"
       >
         <li>
           <a
@@ -371,7 +400,10 @@ const globalStore = useGlobalStore();
               </g>
               <defs>
                 <clipPath id="prefix__clip0">
-                  <path fill="#fff" d="M0 0h54v32.4H0z" />
+                  <path
+                    fill="#fff"
+                    d="M0 0h54v32.4H0z"
+                  />
                 </clipPath>
               </defs>
             </svg>
@@ -382,12 +414,12 @@ const globalStore = useGlobalStore();
     </div>
     <div class="col-span-2 flex h-full w-full flex-col gap-4">
       <h2
-        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+        class="sm:text-2xl text-xl font-bold text-violet-600 dark:text-violet-500"
       >
         {{ globalStore.language === 'pt-BR' ? 'INTERESSES' : 'INTERESTS' }}
       </h2>
       <ul
-        class="grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+        class="sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 grid grid-cols-1 gap-x-4 gap-y-6 xs:grid-cols-2"
       >
         <li>
           <a
@@ -454,8 +486,16 @@ const globalStore = useGlobalStore();
                   x2="685.65"
                   y2="851.324"
                 >
-                  <stop offset="0" stop-color="#1a237e" stop-opacity=".4" />
-                  <stop offset="1" stop-color="#1a237e" stop-opacity="0" />
+                  <stop
+                    offset="0"
+                    stop-color="#1a237e"
+                    stop-opacity=".4"
+                  />
+                  <stop
+                    offset="1"
+                    stop-color="#1a237e"
+                    stop-opacity="0"
+                  />
                 </linearGradient>
                 <path
                   clip-path="url(#H)"
@@ -483,8 +523,16 @@ const globalStore = useGlobalStore();
                   gradientTransform="matrix(0.25,0,0,-0.25,-1812,-622.5)"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop offset="0" stop-color="#fff" stop-opacity=".1" />
-                  <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                  <stop
+                    offset="0"
+                    stop-color="#fff"
+                    stop-opacity=".1"
+                  />
+                  <stop
+                    offset="1"
+                    stop-color="#fff"
+                    stop-opacity="0"
+                  />
                 </radialGradient>
                 <path
                   d="M959.4 500L679.8 779.7l279.6 279.7H639.9L360.2 779.7 639.9 500h319.5zM639.9 20.7L120.6 540l159.8 159.8 679-679.1H639.9z"

@@ -1,32 +1,36 @@
 <script setup lang="ts">
-import { useGlobalStore } from '../stores/globalStore';
 import Button from '../components/Button.vue';
+import { useGlobalStore } from '../stores/globalStore';
 
 const globalStore = useGlobalStore();
 </script>
 
 <template>
   <main
-    class="mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col items-center justify-center gap-16 px-8 sm:py-12 md:px-12"
+    class="sm:py-12 md:px-12 mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col items-center justify-center gap-16 px-8"
   >
     <div class="flex w-full flex-col gap-2">
       <h2
-        class="mb-4 text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+        class="sm:text-2xl mb-4 text-xl font-bold text-violet-600 dark:text-violet-500"
       >
         PROJETOS
       </h2>
-      <h3 class="text-lg font-bold text-gray-600 dark:text-white sm:text-xl">
+      <h3 class="sm:text-xl text-lg font-bold text-gray-600 dark:text-white">
         PlugNotas
       </h3>
-      <div class="flex w-full flex-col gap-8 md:flex-row">
+      <div class="md:flex-row flex w-full flex-col gap-8">
         <div
-          class="flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl border border-violet-600 bg-white md:w-1/2"
+          class="md:w-1/2 flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl border border-violet-600 bg-white"
         >
-          <img class="w-full rounded-xl" src="/plugnotas.png" alt="PlugNotas" />
+          <img
+            class="w-full rounded-xl"
+            src="/plugnotas.png"
+            alt="PlugNotas"
+          />
         </div>
-        <div class="flex w-full flex-col gap-4 md:w-1/2">
+        <div class="md:w-1/2 flex w-full flex-col gap-4">
           <p
-            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+            class="sm:text-xl whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -35,7 +39,7 @@ const globalStore = useGlobalStore();
             }}
           </p>
           <p
-            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+            class="sm:text-xl whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -44,12 +48,12 @@ const globalStore = useGlobalStore();
             }}
           </p>
           <div
-            class="flex flex-col flex-wrap items-start gap-x-8 gap-y-4 sm:flex-row sm:items-center"
+            class="sm:flex-row sm:items-center flex flex-col flex-wrap items-start gap-x-8 gap-y-4"
           >
             <a
               href="https://vuejs.org"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 class="logo"
@@ -74,7 +78,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://www.typescriptlang.org"
               target="_blank"
-              class="text-md ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +91,12 @@ const globalStore = useGlobalStore();
                 version="1.1"
                 viewBox="0 0 512 512"
               >
-                <rect width="512" height="512" rx="50" fill="#3178c6" />
+                <rect
+                  width="512"
+                  height="512"
+                  rx="50"
+                  fill="#3178c6"
+                />
                 <path
                   d="m317 407v50c8.1 4.2 18 7.3 29 9.4s23 3.1 35 3.1c12 0 23-1.1 34-3.4 11-2.3 20-6.1 28-11 8.1-5.3 15-12 19-21s7.1-19 7.1-32c0-9.1-1.4-17-4.1-24s-6.6-13-12-18c-5.1-5.3-11-10-18-14s-15-8.2-24-12c-6.6-2.7-12-5.3-18-7.9-5.2-2.6-9.7-5.2-13-7.8-3.7-2.7-6.5-5.5-8.5-8.4-2-3-3-6.3-3-10 0-3.4 0.89-6.5 2.7-9.3s4.3-5.1 7.5-7.1c3.2-2 7.2-3.5 12-4.6 4.7-1.1 9.9-1.6 16-1.6 4.2 0 8.6 0.31 13 0.94 4.6 0.63 9.3 1.6 14 2.9 4.7 1.3 9.3 2.9 14 4.9 4.4 2 8.5 4.3 12 6.9v-47c-7.6-2.9-16-5.1-25-6.5s-19-2.1-31-2.1c-12 0-23 1.3-34 3.8s-20 6.5-28 12c-8.1 5.4-14 12-19 21-4.7 8.4-7 18-7 30 0 15 4.3 28 13 38 8.6 11 22 19 39 27 6.9 2.8 13 5.6 19 8.3s11 5.5 15 8.4c4.3 2.9 7.7 6.1 10 9.5 2.5 3.4 3.8 7.4 3.8 12 0 3.2-0.78 6.2-2.3 9s-3.9 5.2-7.1 7.2-7.1 3.6-12 4.8c-4.7 1.1-10 1.7-17 1.7-11 0-22-1.9-32-5.7-11-3.8-21-9.5-30-17zm-84-123h64v-41h-179v41h64v183h51z"
                   clip-rule="evenodd"
@@ -101,7 +110,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://tailwindcss.com"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -119,14 +128,20 @@ const globalStore = useGlobalStore();
                 </g>
                 <defs>
                   <clipPath id="prefix__clip0">
-                    <path fill="#fff" d="M0 0h54v32.4H0z" />
+                    <path
+                      fill="#fff"
+                      d="M0 0h54v32.4H0z"
+                    />
                   </clipPath>
                 </defs>
               </svg>
               Tailwind CSS
             </a>
           </div>
-          <Button class="mt-4" type="button">
+          <Button
+            class="mt-4"
+            type="button"
+          >
             <a
               href="https://plugnotas.com.br/"
               target="_blank"
@@ -151,18 +166,22 @@ const globalStore = useGlobalStore();
       </div>
     </div>
     <div class="flex w-full flex-col gap-2">
-      <h3 class="text-lg font-bold text-gray-600 dark:text-white sm:text-xl">
+      <h3 class="sm:text-xl text-lg font-bold text-gray-600 dark:text-white">
         Plug4Market
       </h3>
-      <div class="flex w-full flex-col gap-8 md:flex-row">
+      <div class="md:flex-row flex w-full flex-col gap-8">
         <div
-          class="flex aspect-video w-full items-center justify-center rounded-xl border border-violet-600 bg-white md:w-1/2"
+          class="md:w-1/2 flex aspect-video w-full items-center justify-center rounded-xl border border-violet-600 bg-white"
         >
-          <img class="w-full" src="/plug4market.png" alt="Plug4Market" />
+          <img
+            class="w-full"
+            src="/plug4market.png"
+            alt="Plug4Market"
+          />
         </div>
-        <div class="flex w-full flex-col gap-4 md:w-1/2">
+        <div class="md:w-1/2 flex w-full flex-col gap-4">
           <p
-            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+            class="sm:text-xl whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -171,7 +190,7 @@ const globalStore = useGlobalStore();
             }}
           </p>
           <p
-            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+            class="sm:text-xl whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -180,12 +199,12 @@ const globalStore = useGlobalStore();
             }}
           </p>
           <div
-            class="flex flex-col flex-wrap items-start gap-x-8 gap-y-4 sm:flex-row sm:items-center"
+            class="sm:flex-row sm:items-center flex flex-col flex-wrap items-start gap-x-8 gap-y-4"
           >
             <a
               href="https://vuejs.org"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 class="logo"
@@ -210,7 +229,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://www.typescriptlang.org"
               target="_blank"
-              class="text-md ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -223,7 +242,12 @@ const globalStore = useGlobalStore();
                 version="1.1"
                 viewBox="0 0 512 512"
               >
-                <rect width="512" height="512" rx="50" fill="#3178c6" />
+                <rect
+                  width="512"
+                  height="512"
+                  rx="50"
+                  fill="#3178c6"
+                />
                 <path
                   d="m317 407v50c8.1 4.2 18 7.3 29 9.4s23 3.1 35 3.1c12 0 23-1.1 34-3.4 11-2.3 20-6.1 28-11 8.1-5.3 15-12 19-21s7.1-19 7.1-32c0-9.1-1.4-17-4.1-24s-6.6-13-12-18c-5.1-5.3-11-10-18-14s-15-8.2-24-12c-6.6-2.7-12-5.3-18-7.9-5.2-2.6-9.7-5.2-13-7.8-3.7-2.7-6.5-5.5-8.5-8.4-2-3-3-6.3-3-10 0-3.4 0.89-6.5 2.7-9.3s4.3-5.1 7.5-7.1c3.2-2 7.2-3.5 12-4.6 4.7-1.1 9.9-1.6 16-1.6 4.2 0 8.6 0.31 13 0.94 4.6 0.63 9.3 1.6 14 2.9 4.7 1.3 9.3 2.9 14 4.9 4.4 2 8.5 4.3 12 6.9v-47c-7.6-2.9-16-5.1-25-6.5s-19-2.1-31-2.1c-12 0-23 1.3-34 3.8s-20 6.5-28 12c-8.1 5.4-14 12-19 21-4.7 8.4-7 18-7 30 0 15 4.3 28 13 38 8.6 11 22 19 39 27 6.9 2.8 13 5.6 19 8.3s11 5.5 15 8.4c4.3 2.9 7.7 6.1 10 9.5 2.5 3.4 3.8 7.4 3.8 12 0 3.2-0.78 6.2-2.3 9s-3.9 5.2-7.1 7.2-7.1 3.6-12 4.8c-4.7 1.1-10 1.7-17 1.7-11 0-22-1.9-32-5.7-11-3.8-21-9.5-30-17zm-84-123h64v-41h-179v41h64v183h51z"
                   clip-rule="evenodd"
@@ -237,7 +261,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://tailwindcss.com"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -255,14 +279,20 @@ const globalStore = useGlobalStore();
                 </g>
                 <defs>
                   <clipPath id="prefix__clip0">
-                    <path fill="#fff" d="M0 0h54v32.4H0z" />
+                    <path
+                      fill="#fff"
+                      d="M0 0h54v32.4H0z"
+                    />
                   </clipPath>
                 </defs>
               </svg>
               Tailwind CSS
             </a>
           </div>
-          <Button class="mt-4" type="button">
+          <Button
+            class="mt-4"
+            type="button"
+          >
             <a
               href="https://speedlab.tecnospeed.com.br/plug4market"
               target="_blank"
@@ -283,7 +313,10 @@ const globalStore = useGlobalStore();
               }}
             </a>
           </Button>
-          <Button class="mt-2" type="button">
+          <Button
+            class="mt-2"
+            type="button"
+          >
             <a
               href="https://www.youtube.com/watch?v=HHE_MAep810"
               target="_blank"
@@ -298,7 +331,10 @@ const globalStore = useGlobalStore();
                   d="m154 17.5c-1.82-6.73-7.07-12-13.8-13.8-9.04-3.49-96.6-5.2-122 0.1-6.73 1.82-12 7.07-13.8 13.8-4.08 17.9-4.39 56.6 0.1 74.9 1.82 6.73 7.07 12 13.8 13.8 17.9 4.12 103 4.7 122 0 6.73-1.82 12-7.07 13.8-13.8 4.35-19.5 4.66-55.8-0.1-75z"
                   fill="#fff"
                 />
-                <path d="m105 55-40.8-23.4v46.8z" fill="currentColor" />
+                <path
+                  d="m105 55-40.8-23.4v46.8z"
+                  fill="currentColor"
+                />
               </svg>
               {{
                 globalStore.language === 'pt-BR'
@@ -312,18 +348,22 @@ const globalStore = useGlobalStore();
     </div>
 
     <div class="flex w-full flex-col gap-2">
-      <h3 class="text-lg font-bold text-gray-600 dark:text-white sm:text-xl">
+      <h3 class="sm:text-xl text-lg font-bold text-gray-600 dark:text-white">
         Plug4Foods
       </h3>
-      <div class="flex w-full flex-col gap-8 md:flex-row">
+      <div class="md:flex-row flex w-full flex-col gap-8">
         <div
-          class="flex aspect-video w-full items-center justify-center rounded-xl border border-violet-600 bg-white md:w-1/2"
+          class="md:w-1/2 flex aspect-video w-full items-center justify-center rounded-xl border border-violet-600 bg-white"
         >
-          <img class="h-5/6" src="/plug4foods.png" alt="Plug4Foods" />
+          <img
+            class="h-5/6"
+            src="/plug4foods.png"
+            alt="Plug4Foods"
+          />
         </div>
-        <div class="flex w-full flex-col gap-4 md:w-1/2">
+        <div class="md:w-1/2 flex w-full flex-col gap-4">
           <p
-            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+            class="sm:text-xl whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -332,7 +372,7 @@ const globalStore = useGlobalStore();
             }}
           </p>
           <p
-            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+            class="sm:text-xl whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -341,12 +381,12 @@ const globalStore = useGlobalStore();
             }}
           </p>
           <div
-            class="flex flex-col flex-wrap items-start gap-x-8 gap-y-4 sm:flex-row sm:items-center"
+            class="sm:flex-row sm:items-center flex flex-col flex-wrap items-start gap-x-8 gap-y-4"
           >
             <a
               href="https://vuejs.org"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 class="logo"
@@ -371,7 +411,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://www.typescriptlang.org"
               target="_blank"
-              class="text-md ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -384,7 +424,12 @@ const globalStore = useGlobalStore();
                 version="1.1"
                 viewBox="0 0 512 512"
               >
-                <rect width="512" height="512" rx="50" fill="#3178c6" />
+                <rect
+                  width="512"
+                  height="512"
+                  rx="50"
+                  fill="#3178c6"
+                />
                 <path
                   d="m317 407v50c8.1 4.2 18 7.3 29 9.4s23 3.1 35 3.1c12 0 23-1.1 34-3.4 11-2.3 20-6.1 28-11 8.1-5.3 15-12 19-21s7.1-19 7.1-32c0-9.1-1.4-17-4.1-24s-6.6-13-12-18c-5.1-5.3-11-10-18-14s-15-8.2-24-12c-6.6-2.7-12-5.3-18-7.9-5.2-2.6-9.7-5.2-13-7.8-3.7-2.7-6.5-5.5-8.5-8.4-2-3-3-6.3-3-10 0-3.4 0.89-6.5 2.7-9.3s4.3-5.1 7.5-7.1c3.2-2 7.2-3.5 12-4.6 4.7-1.1 9.9-1.6 16-1.6 4.2 0 8.6 0.31 13 0.94 4.6 0.63 9.3 1.6 14 2.9 4.7 1.3 9.3 2.9 14 4.9 4.4 2 8.5 4.3 12 6.9v-47c-7.6-2.9-16-5.1-25-6.5s-19-2.1-31-2.1c-12 0-23 1.3-34 3.8s-20 6.5-28 12c-8.1 5.4-14 12-19 21-4.7 8.4-7 18-7 30 0 15 4.3 28 13 38 8.6 11 22 19 39 27 6.9 2.8 13 5.6 19 8.3s11 5.5 15 8.4c4.3 2.9 7.7 6.1 10 9.5 2.5 3.4 3.8 7.4 3.8 12 0 3.2-0.78 6.2-2.3 9s-3.9 5.2-7.1 7.2-7.1 3.6-12 4.8c-4.7 1.1-10 1.7-17 1.7-11 0-22-1.9-32-5.7-11-3.8-21-9.5-30-17zm-84-123h64v-41h-179v41h64v183h51z"
                   clip-rule="evenodd"
@@ -398,7 +443,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://tailwindcss.com"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -416,14 +461,20 @@ const globalStore = useGlobalStore();
                 </g>
                 <defs>
                   <clipPath id="prefix__clip0">
-                    <path fill="#fff" d="M0 0h54v32.4H0z" />
+                    <path
+                      fill="#fff"
+                      d="M0 0h54v32.4H0z"
+                    />
                   </clipPath>
                 </defs>
               </svg>
               Tailwind CSS
             </a>
           </div>
-          <Button class="mt-4" type="button">
+          <Button
+            class="mt-4"
+            type="button"
+          >
             <a
               href="https://speedlab.tecnospeed.com.br/plug4foods"
               target="_blank"
@@ -448,25 +499,34 @@ const globalStore = useGlobalStore();
       </div>
     </div>
     <div class="flex w-full flex-col gap-2">
-      <h3 class="text-lg font-bold text-gray-600 dark:text-white sm:text-xl">
+      <h3 class="sm:text-xl text-lg font-bold text-gray-600 dark:text-white">
         {{
           globalStore.language === 'pt-BR'
             ? 'Design System TecnoSpeed'
             : 'TecnoSpeed Design System'
         }}
       </h3>
-      <div class="flex w-full flex-col gap-8 md:flex-row">
+      <div class="md:flex-row flex w-full flex-col gap-8">
         <div
-          class="flex aspect-video w-full items-center justify-center rounded-xl border border-violet-600 bg-white md:w-1/2"
+          class="md:w-1/2 flex aspect-video w-full items-center justify-center rounded-xl border border-violet-600 bg-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 420.27 95.67"
             class="w-full px-16"
           >
-            <g id="Camada_2" data-name="Camada 2">
-              <g id="Camada_1-2" data-name="Camada 1">
-                <g id="Logo_TecnoSpeed" data-name="Logo TecnoSpeed">
+            <g
+              id="Camada_2"
+              data-name="Camada 2"
+            >
+              <g
+                id="Camada_1-2"
+                data-name="Camada 1"
+              >
+                <g
+                  id="Logo_TecnoSpeed"
+                  data-name="Logo TecnoSpeed"
+                >
                   <path
                     class="cls-1"
                     fill="#18a4e1"
@@ -540,9 +600,9 @@ const globalStore = useGlobalStore();
             </g>
           </svg>
         </div>
-        <div class="flex w-full flex-col gap-4 md:w-1/2">
+        <div class="md:w-1/2 flex w-full flex-col gap-4">
           <p
-            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+            class="sm:text-xl whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -551,7 +611,7 @@ const globalStore = useGlobalStore();
             }}
           </p>
           <p
-            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+            class="sm:text-xl whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -560,12 +620,12 @@ const globalStore = useGlobalStore();
             }}
           </p>
           <div
-            class="flex flex-col flex-wrap items-start gap-x-8 gap-y-4 sm:flex-row sm:items-center"
+            class="sm:flex-row sm:items-center flex flex-col flex-wrap items-start gap-x-8 gap-y-4"
           >
             <a
               href="https://vuejs.org"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 class="logo"
@@ -590,7 +650,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://www.typescriptlang.org"
               target="_blank"
-              class="text-md ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg ml-1 flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -603,7 +663,12 @@ const globalStore = useGlobalStore();
                 version="1.1"
                 viewBox="0 0 512 512"
               >
-                <rect width="512" height="512" rx="50" fill="#3178c6" />
+                <rect
+                  width="512"
+                  height="512"
+                  rx="50"
+                  fill="#3178c6"
+                />
                 <path
                   d="m317 407v50c8.1 4.2 18 7.3 29 9.4s23 3.1 35 3.1c12 0 23-1.1 34-3.4 11-2.3 20-6.1 28-11 8.1-5.3 15-12 19-21s7.1-19 7.1-32c0-9.1-1.4-17-4.1-24s-6.6-13-12-18c-5.1-5.3-11-10-18-14s-15-8.2-24-12c-6.6-2.7-12-5.3-18-7.9-5.2-2.6-9.7-5.2-13-7.8-3.7-2.7-6.5-5.5-8.5-8.4-2-3-3-6.3-3-10 0-3.4 0.89-6.5 2.7-9.3s4.3-5.1 7.5-7.1c3.2-2 7.2-3.5 12-4.6 4.7-1.1 9.9-1.6 16-1.6 4.2 0 8.6 0.31 13 0.94 4.6 0.63 9.3 1.6 14 2.9 4.7 1.3 9.3 2.9 14 4.9 4.4 2 8.5 4.3 12 6.9v-47c-7.6-2.9-16-5.1-25-6.5s-19-2.1-31-2.1c-12 0-23 1.3-34 3.8s-20 6.5-28 12c-8.1 5.4-14 12-19 21-4.7 8.4-7 18-7 30 0 15 4.3 28 13 38 8.6 11 22 19 39 27 6.9 2.8 13 5.6 19 8.3s11 5.5 15 8.4c4.3 2.9 7.7 6.1 10 9.5 2.5 3.4 3.8 7.4 3.8 12 0 3.2-0.78 6.2-2.3 9s-3.9 5.2-7.1 7.2-7.1 3.6-12 4.8c-4.7 1.1-10 1.7-17 1.7-11 0-22-1.9-32-5.7-11-3.8-21-9.5-30-17zm-84-123h64v-41h-179v41h64v183h51z"
                   clip-rule="evenodd"
@@ -617,7 +682,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://tailwindcss.com"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -635,7 +700,10 @@ const globalStore = useGlobalStore();
                 </g>
                 <defs>
                   <clipPath id="prefix__clip0">
-                    <path fill="#fff" d="M0 0h54v32.4H0z" />
+                    <path
+                      fill="#fff"
+                      d="M0 0h54v32.4H0z"
+                    />
                   </clipPath>
                 </defs>
               </svg>
@@ -646,12 +714,12 @@ const globalStore = useGlobalStore();
       </div>
     </div>
     <div class="flex w-full flex-col gap-2">
-      <h3 class="text-lg font-bold text-gray-600 dark:text-white sm:text-xl">
+      <h3 class="sm:text-xl text-lg font-bold text-gray-600 dark:text-white">
         FastRemedy
       </h3>
-      <div class="flex w-full flex-col gap-8 md:flex-row">
+      <div class="md:flex-row flex w-full flex-col gap-8">
         <div
-          class="flex aspect-video w-full items-center justify-center rounded-xl border border-violet-600 bg-[#59c0b3] md:w-1/2"
+          class="md:w-1/2 flex aspect-video w-full items-center justify-center rounded-xl border border-violet-600 bg-[#59c0b3]"
         >
           <img
             src="/fast-remedy.png"
@@ -659,9 +727,9 @@ const globalStore = useGlobalStore();
             class="aspect-video rounded-xl object-cover"
           />
         </div>
-        <div class="flex w-full flex-col gap-4 md:w-1/2">
+        <div class="md:w-1/2 flex w-full flex-col gap-4">
           <p
-            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+            class="sm:text-xl whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -670,7 +738,7 @@ const globalStore = useGlobalStore();
             }}
           </p>
           <p
-            class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-xl"
+            class="sm:text-xl whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
           >
             {{
               globalStore.language === 'pt-BR'
@@ -679,23 +747,43 @@ const globalStore = useGlobalStore();
             }}
           </p>
           <div
-            class="flex flex-col flex-wrap items-start gap-x-8 gap-y-4 sm:flex-row sm:items-center"
+            class="sm:flex-row sm:items-center flex flex-col flex-wrap items-start gap-x-8 gap-y-4"
           >
             <a
               href="https://reactjs.org"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-7 w-7 min-w-[1.75rem]"
                 viewBox="-11.5 -10.23174 23 20.46348"
               >
-                <circle cx="0" cy="0" r="2.05" fill="#61dafb" />
-                <g stroke="#61dafb" stroke-width="1" fill="none">
-                  <ellipse rx="11" ry="4.2" />
-                  <ellipse rx="11" ry="4.2" transform="rotate(60)" />
-                  <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+                <circle
+                  cx="0"
+                  cy="0"
+                  r="2.05"
+                  fill="#61dafb"
+                />
+                <g
+                  stroke="#61dafb"
+                  stroke-width="1"
+                  fill="none"
+                >
+                  <ellipse
+                    rx="11"
+                    ry="4.2"
+                  />
+                  <ellipse
+                    rx="11"
+                    ry="4.2"
+                    transform="rotate(60)"
+                  />
+                  <ellipse
+                    rx="11"
+                    ry="4.2"
+                    transform="rotate(120)"
+                  />
                 </g>
               </svg>
               React
@@ -703,7 +791,7 @@ const globalStore = useGlobalStore();
             <a
               href="https://nextjs.org"
               target="_blank"
-              class="text-md flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500 md:text-sm lg:text-lg"
+              class="text-md md:text-sm lg:text-lg flex items-center gap-2 whitespace-nowrap text-justify font-semibold text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -751,7 +839,10 @@ const globalStore = useGlobalStore();
               Next.js
             </a>
           </div>
-          <Button class="mt-2" type="button">
+          <Button
+            class="mt-2"
+            type="button"
+          >
             <a
               href="https://fast-remedy-ui.herokuapp.com"
               target="_blank"
@@ -774,7 +865,10 @@ const globalStore = useGlobalStore();
               {{ globalStore.language === 'pt-BR' ? 'Acessar' : 'Visit' }}
             </a>
           </Button>
-          <Button class="mt-2" type="button">
+          <Button
+            class="mt-2"
+            type="button"
+          >
             <a
               href="https://github.com/Fast-Remedy/fast-remedy"
               target="_blank"
@@ -802,7 +896,7 @@ const globalStore = useGlobalStore();
     </div>
     <div class="mt-2 flex w-full flex-col gap-4">
       <h2
-        class="mb-4 text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+        class="sm:text-2xl mb-4 text-xl font-bold text-violet-600 dark:text-violet-500"
       >
         ARTIGOS
       </h2>
@@ -816,7 +910,7 @@ const globalStore = useGlobalStore();
         class="flex cursor-pointer items-center justify-between rounded-xl border border-violet-600 bg-white p-6 transition-colors hover:bg-violet-200 dark:bg-zinc-700 dark:hover:bg-violet-900"
       >
         <h3
-          class="w-full text-center text-lg font-bold text-violet-600 dark:text-white sm:text-xl"
+          class="sm:text-xl w-full text-center text-lg font-bold text-violet-600 dark:text-white"
         >
           {{
             globalStore.language === 'pt-BR'
@@ -849,7 +943,7 @@ const globalStore = useGlobalStore();
         class="flex cursor-pointer items-center justify-between rounded-xl border border-violet-600 bg-white p-6 transition-colors hover:bg-violet-200 dark:bg-zinc-700 dark:hover:bg-violet-900"
       >
         <h3
-          class="w-full text-center text-lg font-bold text-violet-600 dark:text-white sm:text-xl"
+          class="sm:text-xl w-full text-center text-lg font-bold text-violet-600 dark:text-white"
         >
           {{
             globalStore.language === 'pt-BR'

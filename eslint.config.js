@@ -20,6 +20,7 @@ export default [
     rules: {
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
+      'vue/multi-word-component-names': 'off',
     },
   },
   {

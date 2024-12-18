@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useGlobalStore } from './stores/globalStore';
 import Header from './components/Header.vue';
+import { useGlobalStore } from './stores/globalStore';
 
 const globalStore = useGlobalStore();
 

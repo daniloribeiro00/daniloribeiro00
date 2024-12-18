@@ -17,16 +17,16 @@ const myAge = () => {
 
 <template>
   <main
-    class="mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col items-center justify-center gap-8 px-8 sm:py-12 md:px-12"
+    class="sm:py-12 md:px-12 mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col items-center justify-center gap-8 px-8"
   >
     <div class="flex w-full flex-col gap-2">
       <h2
-        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+        class="sm:text-2xl text-xl font-bold text-violet-600 dark:text-violet-500"
       >
         {{ globalStore.language === 'pt-BR' ? 'RESUMO' : 'TL;DR' }}
       </h2>
       <p
-        class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-lg sm:leading-loose"
+        class="sm:text-lg sm:leading-loose whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
       >
         {{
           globalStore.language === 'pt-BR'
@@ -37,7 +37,7 @@ const myAge = () => {
     </div>
     <div class="flex w-full flex-col gap-2">
       <h2
-        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+        class="sm:text-2xl text-xl font-bold text-violet-600 dark:text-violet-500"
       >
         {{
           globalStore.language === 'pt-BR'
@@ -46,7 +46,7 @@ const myAge = () => {
         }}
       </h2>
       <p
-        class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-lg sm:leading-loose"
+        class="sm:text-lg sm:leading-loose whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
       >
         {{
           globalStore.language === 'pt-BR'
@@ -62,11 +62,12 @@ const myAge = () => {
             globalStore.language === 'pt-BR'
               ? 'UniFOA (Centro Universitário de Volta Redonda - RJ)'
               : 'UniFOA (Volta Redonda University Center)'
-          }} </a
-        >{{ globalStore.language === 'pt-BR' ? '.' : ' in Brazil.' }}
+          }}
+        </a>
+        {{ globalStore.language === 'pt-BR' ? '.' : ' in Brazil.' }}
       </p>
       <p
-        class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-lg sm:leading-loose"
+        class="sm:text-lg sm:leading-loose whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
       >
         {{
           globalStore.language === 'pt-BR'
@@ -78,11 +79,12 @@ const myAge = () => {
           target="_blank"
           class="font-semibold transition-colors hover:text-violet-600 dark:font-bold dark:hover:text-violet-500"
         >
-          MicroCamp</a
-        >.
+          MicroCamp
+        </a>
+        .
       </p>
       <p
-        class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-lg sm:leading-loose"
+        class="sm:text-lg sm:leading-loose whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
       >
         {{
           globalStore.language === 'pt-BR'
@@ -96,13 +98,14 @@ const myAge = () => {
         >
           {{
             globalStore.language === 'pt-BR' ? "Ed's Idiomas" : "Ed's School"
-          }}</a
-        >.
+          }}
+        </a>
+        .
       </p>
     </div>
     <div class="flex w-full flex-col gap-2">
       <h2
-        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+        class="sm:text-2xl text-xl font-bold text-violet-600 dark:text-violet-500"
       >
         {{
           globalStore.language === 'pt-BR'
@@ -111,7 +114,7 @@ const myAge = () => {
         }}
       </h2>
       <p
-        class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-lg sm:leading-loose"
+        class="sm:text-lg sm:leading-loose whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
       >
         {{
           globalStore.language === 'pt-BR'
@@ -123,8 +126,9 @@ const myAge = () => {
           target="_blank"
           class="font-semibold transition-colors hover:text-violet-600 dark:font-bold dark:hover:text-violet-500"
         >
-          TecnoSpeed </a
-        >｜
+          TecnoSpeed
+        </a>
+        ｜
         {{
           globalStore.language === 'pt-BR'
             ? 'Julho 2021 - Agora'
@@ -132,21 +136,30 @@ const myAge = () => {
         }}
       </p>
       <span
-        class="flex flex-col items-center gap-8 whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:flex-row sm:leading-loose"
+        class="sm:flex-row sm:leading-loose flex flex-col items-center gap-8 whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
       >
         <a
           href="https://tecnospeed.com.br"
           target="_blank"
-          class="mt-4 font-semibold transition-colors hover:text-violet-600 dark:font-bold dark:hover:text-violet-500 sm:mt-0"
+          class="sm:mt-0 mt-4 font-semibold transition-colors hover:text-violet-600 dark:font-bold dark:hover:text-violet-500"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 420.27 95.67"
             class="h-12 dark:brightness-0 dark:invert"
           >
-            <g id="Camada_2" data-name="Camada 2">
-              <g id="Camada_1-2" data-name="Camada 1">
-                <g id="Logo_TecnoSpeed" data-name="Logo TecnoSpeed">
+            <g
+              id="Camada_2"
+              data-name="Camada 2"
+            >
+              <g
+                id="Camada_1-2"
+                data-name="Camada 1"
+              >
+                <g
+                  id="Logo_TecnoSpeed"
+                  data-name="Logo TecnoSpeed"
+                >
                   <path
                     class="cls-1"
                     fill="#18a4e1"
@@ -229,12 +242,12 @@ const myAge = () => {
     </div>
     <div class="flex w-full flex-col gap-2">
       <h2
-        class="text-xl font-bold text-violet-600 dark:text-violet-500 sm:text-2xl"
+        class="sm:text-2xl text-xl font-bold text-violet-600 dark:text-violet-500"
       >
         BIO
       </h2>
       <p
-        class="whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white sm:text-lg sm:leading-loose"
+        class="sm:text-lg sm:leading-loose whitespace-pre-line text-justify leading-relaxed text-gray-600 dark:text-white"
       >
         {{
           globalStore.language === 'pt-BR'

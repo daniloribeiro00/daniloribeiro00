@@ -6,11 +6,11 @@ const globalStore = useGlobalStore();
 
 <template>
   <main
-    class="mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col-reverse items-center justify-center gap-8 px-6 sm:flex-row md:justify-between md:px-12"
+    class="sm:flex-row md:justify-between md:px-12 mb-10 flex h-full w-full max-w-[1200px] flex-1 flex-col-reverse items-center justify-center gap-8 px-6"
   >
     <div class="flex h-full w-full flex-col gap-4">
       <p
-        class="whitespace-pre-line text-center text-lg leading-relaxed text-gray-600 dark:text-white sm:text-justify sm:text-xl sm:leading-loose"
+        class="sm:text-justify sm:text-xl sm:leading-loose whitespace-pre-line text-center text-lg leading-relaxed text-gray-600 dark:text-white"
       >
         {{
           globalStore.language === 'pt-BR'
@@ -18,8 +18,8 @@ const globalStore = useGlobalStore();
             : 'Feel free to contact me :)'
         }}
       </p>
-      <ul class="-ml-2 flex flex-col gap-8 pt-6 sm:ml-0 sm:gap-6 sm:pt-2">
-        <li class="flex items-center justify-center sm:justify-start">
+      <ul class="sm:ml-0 sm:gap-6 sm:pt-2 -ml-2 flex flex-col gap-8 pt-6">
+        <li class="sm:justify-start flex items-center justify-center">
           <a
             href="https://www.linkedin.com/in/daniloribeiro00/"
             target="_blank"
@@ -45,7 +45,7 @@ const globalStore = useGlobalStore();
             LinkedIn
           </a>
         </li>
-        <li class="flex items-center justify-center sm:justify-start">
+        <li class="sm:justify-start flex items-center justify-center">
           <a
             href="https://github.com/daniloribeiro00"
             target="_blank"
@@ -68,7 +68,7 @@ const globalStore = useGlobalStore();
             GitHub
           </a>
         </li>
-        <li class="-mt-0.5 flex items-center justify-center sm:justify-start">
+        <li class="sm:justify-start -mt-0.5 flex items-center justify-center">
           <a
             href="mailto:danilo@duarteribeiro.com.br"
             target="_blank"
@@ -94,7 +94,7 @@ const globalStore = useGlobalStore();
     </div>
     <div>
       <img
-        class="h-40 w-40 max-w-[none] rounded-full object-cover xs:h-60 xs:w-60 md:h-80 md:w-80"
+        class="md:h-80 md:w-80 h-40 w-40 max-w-[none] rounded-full object-cover xs:h-60 xs:w-60"
         src="https://avatars.githubusercontent.com/u/68981163?"
         alt="Danilo Ribeiro"
       />
