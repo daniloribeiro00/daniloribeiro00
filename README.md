@@ -20,4 +20,4 @@ My main focus is developing interfaces that combine design, functionality, and b
 
 <br />
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=daniloribeiro00&layout=compact&theme=tokyonight&hide=c%23)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=daniloribeiro00&layout=compact&theme=tokyonight)](https://github.com/daniloribeiro00/github-readme-stats)
