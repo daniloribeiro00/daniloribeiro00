@@ -4,22 +4,7 @@ import { useGlobalStore } from './stores/globalStore';
 
 const globalStore = useGlobalStore();
 
-if (
-  localStorage.theme === 'dark' ||
-  (!('theme' in localStorage) &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches)
-) {
-  document.documentElement.classList.add('dark');
-  document
-    .querySelector('meta[name="theme-color"]')
-    ?.setAttribute('content', '#f1f5f9');
-} else {
-  document.documentElement.classList.remove('dark');
-  document
-    .querySelector('meta[name="theme-color"]')
-    ?.setAttribute('content', '#27272a');
-}
-
+// language settings
 if (!navigator.language.toLowerCase().startsWith('pt')) {
   globalStore.setLanguage('en');
   document
@@ -46,22 +31,24 @@ if (!navigator.language.toLowerCase().startsWith('pt')) {
 
 <template>
   <body
-    class="flex min-h-screen w-full flex-col items-center bg-white transition-colors duration-500 dark:bg-zinc-800"
+    class="flex min-h-screen w-full flex-col items-center bg-gradient-to-bl from-violet-200/50 via-gray-100 to-violet-300/80 transition-all duration-200 dark:from-violet-900/5 dark:via-zinc-900/80 dark:to-violet-900/40"
   >
     <Header class="z-20" />
-    <router-view v-slot="{ Component }">
+    <RouterView v-slot="{ Component }">
       <Transition mode="out-in">
         <component :is="Component" />
       </Transition>
-    </router-view>
+    </RouterView>
   </body>
 </template>
 
 <style>
-@supports (overflow-y: overlay) {
-  .custom-scrollbar {
-    overflow-y: overlay;
-  }
+html {
+  scrollbar-width: thin;
+}
+
+.custom-scrollbar {
+  overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {

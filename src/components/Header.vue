@@ -8,31 +8,19 @@ const globalStore = useGlobalStore();
 
 const darkMode = ref(false);
 
-if (
-  localStorage.theme === 'dark' ||
-  (!('theme' in localStorage) &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches)
-) {
-  darkMode.value = true;
-} else {
-  darkMode.value = false;
-}
+darkMode.value = globalStore.theme === 'dark';
 
-const toggleTheme = () => {
-  if (localStorage.theme === 'dark') {
-    document.documentElement.classList.remove('dark');
-    localStorage.theme = 'light';
-    document
-      .querySelector('meta[name="theme-color"]')
-      ?.setAttribute('content', '#f1f5f9');
-  } else {
-    document.documentElement.classList.add('dark');
-    localStorage.theme = 'dark';
-    document
-      .querySelector('meta[name="theme-color"]')
-      ?.setAttribute('content', '#27272a');
-  }
-};
+if (darkMode.value) {
+  document.documentElement.classList.add('dark');
+  document
+    .querySelector('meta[name="theme-color"]')
+    ?.setAttribute('content', '#f1f5f9');
+} else {
+  document.documentElement.classList.remove('dark');
+  document
+    .querySelector('meta[name="theme-color"]')
+    ?.setAttribute('content', '#27272a');
+}
 
 const setLanguage = () => {
   if (globalStore.language === 'pt-BR') globalStore.setLanguage('en');
@@ -40,97 +28,67 @@ const setLanguage = () => {
 };
 
 watch(darkMode, () => {
-  toggleTheme();
+  globalStore.setTheme(darkMode.value ? 'dark' : 'light');
 });
 </script>
 
 <template>
   <header class="flex w-full flex-col p-6">
     <div
-      class="flex w-full items-center justify-between bg-white transition-colors duration-500 dark:bg-zinc-800"
+      class="relative flex w-full items-center justify-between transition-colors duration-500"
     >
-      <div class="flex h-full w-40 items-center gap-4">
+      <div class="z-10 flex h-full w-40 items-center gap-4">
         <button
           type="button"
-          class="rounded-lg outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
+          class="rounded-md outline-none ring-violet-600 ring-offset-4 ring-offset-white transition-all duration-200 ease-in-out focus:ring dark:ring-offset-zinc-800"
         >
-          <router-link
+          <RouterLink
             to="/"
+            tabindex="-1"
             class="whitespace-nowrap text-xl font-semibold leading-none text-gray-600 transition-colors hover:text-violet-600 dark:text-white dark:hover:text-violet-500"
           >
             Danilo Ribeiro
-          </router-link>
+          </RouterLink>
         </button>
       </div>
       <nav
-        class="md:flex lg:gap-4 hidden h-full w-1/3 items-center justify-center gap-3"
+        class="hidden h-full w-1/3 items-center justify-center gap-3 lg:gap-4"
       >
         <button
+          v-for="link in [
+            { to: '/', text: 'HOME' },
+            {
+              to: '/about',
+              text: globalStore.language === 'pt-BR' ? 'SOBRE' : 'ABOUT',
+            },
+            {
+              to: '/skills',
+              text: globalStore.language === 'pt-BR' ? 'HABILIDADES' : 'SKILLS',
+            },
+            {
+              to: '/works',
+              text: globalStore.language === 'pt-BR' ? 'TRABALHOS' : 'WORKS',
+            },
+          ]"
+          :key="link.to"
           type="button"
-          class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
+          class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 ring-offset-white transition-all duration-200 ease-in-out focus:ring dark:ring-offset-zinc-800"
         >
-          <router-link
-            to="/"
+          <RouterLink
+            :to="link.to"
+            tabindex="-1"
             class="border-y-2 border-transparent py-1 text-xs font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white"
             activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500 hover:border-b-violet-600"
           >
-            HOME
-          </router-link>
-        </button>
-        <button
-          type="button"
-          class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
-        >
-          <router-link
-            to="/about"
-            class="border-y-2 border-transparent py-1 text-xs font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white"
-            activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
-          >
-            {{ globalStore.language === 'pt-BR' ? 'SOBRE' : 'ABOUT' }}
-          </router-link>
-        </button>
-        <button
-          type="button"
-          class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
-        >
-          <router-link
-            to="/skills"
-            class="border-y-2 border-transparent py-1 text-xs font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white"
-            activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
-          >
-            {{ globalStore.language === 'pt-BR' ? 'HABILIDADES' : 'SKILLS' }}
-          </router-link>
-        </button>
-        <button
-          type="button"
-          class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
-        >
-          <router-link
-            to="/works"
-            class="border-y-2 border-transparent py-1 text-xs font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white"
-            activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
-          >
-            {{ globalStore.language === 'pt-BR' ? 'TRABALHOS' : 'WORKS' }}
-          </router-link>
-        </button>
-        <button
-          type="button"
-          class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
-        >
-          <router-link
-            to="/contact"
-            class="border-y-2 border-transparent py-1 text-xs font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white"
-            activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
-          >
-            {{ globalStore.language === 'pt-BR' ? 'CONTATO' : 'CONTACT' }}
-          </router-link>
+            {{ link.text }}
+          </RouterLink>
         </button>
       </nav>
-      <div class="flex h-full w-40 items-center justify-end gap-4">
+      <div class="z-10 flex h-full w-40 items-center justify-end gap-4">
         <button
           aria-label="{{ globalStore.language === 'pt-BR' ? 'Change to English' : 'Mudar para português' }}"
           type="button"
-          class="flex items-center justify-center gap-1.5 rounded-full text-gray-600 outline-none ring-violet-600 ring-offset-2 transition-colors duration-200 ease-in-out hover:text-violet-600 focus:ring dark:text-white dark:hover:text-violet-500"
+          class="flex items-center justify-center gap-1.5 rounded-full text-gray-600 outline-none ring-violet-600 ring-offset-2 ring-offset-white transition-all duration-200 ease-in-out hover:text-violet-600 focus:ring dark:text-white dark:ring-offset-zinc-800 dark:hover:text-violet-500"
           @click="setLanguage"
         >
           <span class="hidden pl-1 text-xs xs:block">
@@ -154,19 +112,19 @@ watch(darkMode, () => {
         <Switch
           v-model="darkMode"
           :class="darkMode ? 'bg-violet-500' : 'bg-gray-300'"
-          class="sm:h-7 sm:w-14 relative inline-flex h-6 w-12 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
+          class="relative inline-flex h-6 w-12 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent outline-none ring-violet-600 ring-offset-2 ring-offset-white transition-all duration-200 ease-in-out focus:ring dark:ring-offset-zinc-800 sm:h-7 sm:w-14"
         >
           <span class="sr-only">Dark mode</span>
           <span
             aria-hidden="true"
             :class="
-              darkMode ? 'sm:translate-x-7 translate-x-6' : 'translate-x-0'
+              darkMode ? 'translate-x-6 sm:translate-x-7' : 'translate-x-0'
             "
-            class="sm:h-6 sm:w-6 pointer-events-none flex h-5 w-5 transform items-center justify-center rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out"
+            class="pointer-events-none flex h-5 w-5 transform items-center justify-center rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out sm:h-6 sm:w-6"
           >
             <svg
               v-if="!darkMode"
-              class="sm:h-5 sm:w-5 h-4 w-4 text-gray-600"
+              class="h-4 w-4 text-gray-600 sm:h-5 sm:w-5"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -185,7 +143,7 @@ watch(darkMode, () => {
             </svg>
             <svg
               v-else
-              class="sm:h-5 sm:w-5 h-4 w-4 text-gray-800"
+              class="h-4 w-4 text-gray-800 sm:h-5 sm:w-5"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -199,67 +157,28 @@ watch(darkMode, () => {
       </div>
     </div>
     <nav
-      class="md:hidden mt-3 flex h-full w-full items-center justify-center gap-3"
+      class="mt-3 flex h-full w-full items-center justify-center gap-6 md:absolute md:top-2 md:-ml-4 md:h-auto"
     >
       <button
+        v-for="link in [
+          { to: '/', text: 'HOME' },
+          {
+            to: '/about',
+            text: globalStore.language === 'pt-BR' ? 'SOBRE' : 'ABOUT',
+          },
+        ]"
+        :key="link.to"
         type="button"
-        class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
+        class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 ring-offset-white transition-all duration-200 ease-in-out focus:ring dark:ring-offset-zinc-800"
       >
-        <router-link
-          to="/"
-          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-[0.7rem]"
+        <RouterLink
+          :to="link.to"
+          tabindex="-1"
+          class="border-y-2 border-transparent py-1 text-xs font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white"
           activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500 hover:border-b-violet-600"
         >
-          HOME
-        </router-link>
-      </button>
-      <button
-        type="button"
-        class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
-      >
-        <router-link
-          to="/about"
-          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-[0.7rem]"
-          activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
-        >
-          {{ globalStore.language === 'pt-BR' ? 'SOBRE' : 'ABOUT' }}
-        </router-link>
-      </button>
-      <button
-        type="button"
-        class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
-      >
-        <router-link
-          to="/skills"
-          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-[0.7rem]"
-          activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
-        >
-          {{ globalStore.language === 'pt-BR' ? 'HABILIDADES' : 'SKILLS' }}
-        </router-link>
-      </button>
-      <button
-        type="button"
-        class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
-      >
-        <router-link
-          to="/works"
-          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-[0.7rem]"
-          activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
-        >
-          {{ globalStore.language === 'pt-BR' ? 'TRABALHOS' : 'WORKS' }}
-        </router-link>
-      </button>
-      <button
-        type="button"
-        class="rounded-lg p-1 outline-none ring-violet-600 ring-offset-2 transition-all duration-200 ease-in-out focus:ring"
-      >
-        <router-link
-          to="/contact"
-          class="border-y-2 border-transparent py-1 text-[0.5rem] font-semibold tracking-wider text-gray-600 transition-colors hover:border-b-violet-600 dark:text-white xs:text-[0.7rem]"
-          activeClass="border-b-violet-600 dark:border-b-violet-500 text-violet-600 dark:text-violet-500  hover:border-b-violet-600"
-        >
-          {{ globalStore.language === 'pt-BR' ? 'CONTATO' : 'CONTACT' }}
-        </router-link>
+          {{ link.text }}
+        </RouterLink>
       </button>
     </nav>
   </header>
