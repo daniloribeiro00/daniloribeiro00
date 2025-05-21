@@ -2,7 +2,7 @@
 
 From an early age, I have been passionate about technology, which led me to graduate in Information Systems at UniFOA (Volta Redonda, Rio de Janeiro, Brazil) in 2021. Even before completing my degree, I was already working in the field.
 
-I started my career in 2021, specializing in Vue.js and TypeScript. Later, I joined several teams within the company at the time, being responsible for designing and maintaining new modern and responsive interfaces for its main products. I worked with technologies such as Vue.js, Nuxt, TypeScript, and Tailwind CSS, and co-created and served as the lead maintainer of the company’s design system.
+I started my career in 2021, specializing in Vue.js and TypeScript. Later, I moved through several teams within the company at the time, being responsible for designing and maintaining new modern and responsive interfaces for its main products. I worked with technologies such as Vue.js, Nuxt, TypeScript, and Tailwind CSS, and co-created and served as the lead maintainer of the company’s design system.
 
 My main focus is developing interfaces that combine design, functionality, and best practices in UI and UX, delivering high-quality solutions with a strong emphasis on user experience.
 
